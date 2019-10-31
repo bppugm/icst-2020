@@ -7,3 +7,35 @@
   button.bg-darkpink:focus {
     background-color: #5e0d2d !important;
   }
+
+/* HOMEPAGE */
+/* speakers */
+.speaker-img {
+  height: 200px;
+  width: 200px;
+  border: 1px solid #e5e5e5;
+  border-radius: .5rem;
+}
+.speaker-info {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+.speaker-name {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: .5;
+  font-family: "Montserrat", Arial, "Calibri", sans-serif;
+}
+.speaker-aff {
+  font-size: .8rem;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, "Calibri", sans-serif;
+}
+/* FOOTER */
+.credit {
+  font-size: .8rem;
+  font-weight: 400;
+  text-align: justify;
+  font-family: "Open Sans", Arial, "Calibri", sans-serif;
+}
