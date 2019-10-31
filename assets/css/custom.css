@@ -1,0 +1,9 @@
+.bg-darkpink {
+    background-color: #a1164e !important;
+  }
+  
+  a.bg-darkpink:hover, a.bg-darkpink:focus,
+  button.bg-darkpink:hover,
+  button.bg-darkpink:focus {
+    background-color: #5e0d2d !important;
+  }
