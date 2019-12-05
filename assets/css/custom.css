@@ -8,6 +8,16 @@
     background-color: #5e0d2d !important;
   }
 
+.bg-modblue {
+    background-color: #307abd !important;
+  }
+  
+  a.bg-modblue:hover, a.bg-modblue:focus,
+  button.bg-modblue:hover,
+  button.bg-modblue:focus {
+    background-color: #306ba4 !important;
+  }  
+  
 /* HOMEPAGE */
 /* speakers */
 .speaker-img {
