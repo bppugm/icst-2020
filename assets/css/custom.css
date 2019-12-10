@@ -1,24 +1,55 @@
 .bg-darkpink {
-    background-color: #a1164e !important;
-  }
-  
-  a.bg-darkpink:hover, a.bg-darkpink:focus,
-  button.bg-darkpink:hover,
-  button.bg-darkpink:focus {
-    background-color: #5e0d2d !important;
-  }
+  background-color: #a1164e !important;
+}
+
+a.bg-darkpink:hover, a.bg-darkpink:focus,
+button.bg-darkpink:hover,
+button.bg-darkpink:focus {
+  background-color: #5e0d2d !important;
+}
 
 .bg-modblue {
-    background-color: #307abd !important;
-  }
-  
-  a.bg-modblue:hover, a.bg-modblue:focus,
-  button.bg-modblue:hover,
-  button.bg-modblue:focus {
-    background-color: #306ba4 !important;
-  }  
-  
+  background-color: #307abd !important;
+}
+
+a.bg-modblue:hover, a.bg-modblue:focus,
+button.bg-modblue:hover,
+button.bg-modblue:focus {
+  background-color: #306ba4 !important;
+}  
+
 /* HOMEPAGE */
+
+.highlight-blue {
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  color: #306ba4;
+  transition: background-size 0.25s ease-in;
+}
+
+.highlight-blue:hover {
+  background-size: 100% 88%;
+  background-color: #8fd3f4;
+  text-decoration: none;
+  color: #212529;
+}
+
+.underline-magical {
+  background-image: linear-gradient(120deg, #8fd3f4 0%, #84fab0 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  color: #212529;
+  transition: background-size 0.25s ease-in;
+}
+
+.underline-magical:hover {
+  background-size: 100% 88%;
+  text-decoration: none;
+  color: #212529;
+}
+
 /* speakers */
 .speaker-img {
   height: 200px;
