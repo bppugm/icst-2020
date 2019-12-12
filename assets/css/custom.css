@@ -48,6 +48,20 @@ button.bg-modblue:focus {
   border: none !important;
 }
 
+/* BREADCRUMB */
+
+.breadcrumbx {
+  background-color: transparent !important;
+}
+
+.breadcrumbx-item + .breadcrumb-item::before {
+  color: #307abd !important;
+}
+
+.breadcrumbx-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
+
 /* HOMEPAGE */
 
 .highlight-blue {
