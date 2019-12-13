@@ -18,6 +18,19 @@ button.bg-modblue:focus {
   background-color: #306ba4 !important;
 }
 
+h1 {
+  font-size: 1.75rem !important;
+  text-transform: uppercase !important;
+}
+
+h2 {
+  font-size: 1.3rem !important;
+}
+
+a {
+  color: #307abd !important;
+}
+
 /* NAVBAR */
 .nav-custome {
   padding-top: 0;
@@ -45,7 +58,8 @@ button.bg-modblue:focus {
 }
 
 .dropdown-menu {
-  border: none !important;
+  margin-top: -7px !important;
+  border-radius: 0px !important;
 }
 
 /* BREADCRUMB */
