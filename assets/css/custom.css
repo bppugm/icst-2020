@@ -58,8 +58,20 @@ a {
 }
 
 .dropdown-menu {
-  margin-top: -7px !important;
+  margin-top: -5px !important;
   border-radius: 0px !important;
+}
+
+/* MEGAMENU */
+
+.megamenu {
+  position: static;
+}
+
+.megamenu .dropdown-menu {
+  background: none;
+  border: none;
+  width: 100%;
 }
 
 /* BREADCRUMB */
