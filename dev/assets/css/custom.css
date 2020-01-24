@@ -78,6 +78,7 @@ a {
 
 .breadcrumbx {
   background-color: transparent !important;
+  font-size: 10pt;
 }
 
 .breadcrumbx-item + .breadcrumb-item::before {
