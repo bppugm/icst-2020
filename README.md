@@ -1,3 +1,5 @@
+<a href="http://icst.ugm.ac.id/2020/"><img src="https://github.com/bppugm/icst-2020/blob/master/images/logos/logo.svg" height="142px" align="right"></a>
+
 # Website for the ICST 2020
 
 This is the website for The 6<sup>th</sup> International Conference on Science and Technology (ICST 2020), hosted by Universitas Gadjah Mada.
@@ -7,20 +9,43 @@ This is the website for The 6<sup>th</sup> International Conference on Science a
 ### Contributors
 
 + [@davieiycode](https://github.com/davieiycode)
++ [@w1lldone](https://github.com/w1lldone)
++ [@imalavins](https://github.com/imalavins)
++ [@nisakusumaa](https://github.com/nisakusumaa)
 
 ### Development
 
-+ HTML, CSS, Javascript Library by [Bootstrap 4.3.1](https://getbootstrap.com/docs/4.3/)
-+ Website content based on [ICST 2017 Website](https://github.com/jaybaeta/icst-2017) and [BioMIC 2019 Website](https://github.com/bppugm/biomic-2019) © [Joaquim Baeta](https://github.com/jaybaeta/) with modification by [Rafieiy](https://github.com/davieiycode/), under the [MIT License](https://github.com/jaybaeta/icst-2017/blob/master/LICENSE.md)
++ HTML, CSS, Javascript Library by [Bootstrap 4.4.1](https://getbootstrap.com/docs/4.4/)
++ Based on [ICST 2017 Website](https://github.com/jaybaeta/icst-2017) © [Joaquim Baeta](https://github.com/jaybaeta/) with modification, under the [MIT License](https://github.com/jaybaeta/icst-2017/blob/master/LICENSE.md)
 
 ### Icons
 
-+ [Fonticons, Inc.](https://fontawesome.com/)
++ [Font Awesome](http://fontawesome.io); [multiple licenses](http://fontawesome.io/license/)
++ [Webalys](https://www.iconfinder.com/webalys); [free for commercial use](https://www.iconfinder.com/iconsets/kameleon-free-pack-rounded)
++ [Boca Tutor](https://www.iconfinder.com/bocatutor); [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
++ [Sergey Toropov](https://www.iconfinder.com/Sergt); [free for commercial use](https://www.iconfinder.com/iconsets/file-extension-3) (modified)
++ [@jaybaeta](https://github.com/jaybaeta)
 
 ### Favicon
 
 + [RealFaviconGenerator](http://realfavicongenerator.net/) by [@realfavicongenerator](https://github.com/realfavicongenerator)
 
+### Jumbotron
+
++ Background by [@davieiycode](https://github.com/davieiycode), based on [Starline](https://www.freepik.com/free-vector/halftone-texture-frame-with-text-space_2543378.htm); free for comercial use.
+
+
+### Symposia images
+
++ Computer and Information Technology: [Ars Electronica](https://flic.kr/p/NLBeFd); [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
++ Electronics, Communication, Control, and Instrumentation: [Ched Cheddles](https://flic.kr/p/9773UW); [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
++ Environmental and Earth Science: [Kreemerz](https://flic.kr/p/27f3hV5); [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
++ Material Science and Chemistry: [Martin Lopez](https://www.pexels.com/photo/two-test-tubes-954585/); free for personal and commercial use
++ Mechanical and Industrial Engineering: [Pixabay](https://www.pexels.com/photo/gray-and-gold-steel-gears-159275/); free for personal and commercial use
++ Power and Energy: [Ali Madad](https://www.pexels.com/photo/people-in-boat-near-water-dam-1259924/); free for personal and commercial use
++ Remote Sensing and Geomatics: [NASA's Marshall Space Flight Center](https://flic.kr/p/UyzZWb); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
+
+
 ## License
 
-© 2019 Badan Penerbit dan Publikasi UGM under the MIT License.
+© 2020 Badan Penerbit dan Publikasi UGM under the MIT License.
