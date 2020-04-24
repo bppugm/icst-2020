@@ -718,6 +718,62 @@ code {
   color: #1d73cc !important;
 }
 
+.nav-pills .nav-link {
+  border-radius: 0rem !important;
+  color: #343a40;
+}
+
+.nav-pills .nav-link:hover{
+  border-bottom: solid 3px grey;
+  margin-bottom: -5px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #1d73cc !important;
+  background-color: #f8f9fa !important;
+  border-bottom: solid 3px #1d73cc;
+  margin-bottom: -5px;
+}
+
+.nav-tabs {
+  border-bottom: 0px !important;
+}
+
+.nav-tabs .nav-item {
+  color: #343a40;
+  margin-bottom: 0px !important;
+}
+
+.nav-tabs .nav-link {
+  border: 0px !important;
+  border-radius: 0rem !important;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-top: solid 3px grey !important;
+  margin-top: -3px;
+}
+
+.nav-tabs .nav-link.disabled {
+  color: #6c757d;
+  background-color: #1d72cc1f;
+  border-color: transparent;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: #ffc1071f;
+  border-top: solid 3px #ffc107 !important;
+  margin-top: -3px;
+  margin-bottom: -9px !important;
+}
+
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
 .bg-primary {
   background-color: #1d73cc !important;
@@ -726,6 +782,11 @@ code {
 .btn-primary {
   background-color: #1d73cc !important;
   border-color: #1d73cc !important;
+}
+
+.bg-pattern-icst {
+  background-color: #f5f9fd;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23307abd' fill-opacity='0.04'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* p a {

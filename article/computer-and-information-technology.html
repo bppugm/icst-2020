@@ -36,227 +36,426 @@
 
 <body class="index">
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #f8f7fd; border-bottom: 1px solid #eaeaf6">
-    <a class="navbar-brand" href="../index.html"><img src="../images/logos/logo.svg" width="100px"></a>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1d73cc; border-bottom: 1px solid #1a6abe">
+    <a class="navbar-brand btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"><img src="../images/logos/logo.svg" width="100px"></a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="http://icosia.ugm.ac.id/"><img src="http://icosia.ugm.ac.id/2020/images/logos/logo.svg" width="100px"></a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="http://biomic.ugm.ac.id/"><img src="http://biomic.ugm.ac.id/2020/images/logos/logo.svg" width="100px"></a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#icst-nav" aria-controls="icst-nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="icst-nav">
-      <ul class="navbar-nav ml-auto text-uppercase">
-        <!-- ABOUT -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" data-toggle="dropdown">Conference</a>
-          <div class="dropdown-menu" role="menu">
-            <a class="dropdown-item" href="about.html">Introduction</a>
-            <a class="dropdown-item" href="symposia.html">Satellite events</a>
-            <a class="dropdown-item" href="speakers.html">Speakers</a>
-            <a class="dropdown-item" href="venue.html">Venue</a>
-            <a class="dropdown-item" href="about.html">Committees</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="about-ugm.html" >Universitas Gadjah Mada</a>
-            <a target="_blank" class="dropdown-item" href="https://www.yogyes.com/">Yogyakarta</a>
-            <a target="_blank" class="dropdown-item" href="http://borobudurpark.com/">Ramayana Ballet</a>
-          </div>
-        </li>
-        
-        <!-- PRESENTERS -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" data-toggle="dropdown">Participation</a>
-          <div class="dropdown-menu scrollable-menu" role="menu">
-            <a class="dropdown-item" href="fees.html">Fees</a>
-            <a class="dropdown-item disabled-item" href="payment-confirmation-presenter.html">Payment confirmation</a>
-            <div class="dropdown-divider"></div>
-            <span class="dropdown-item disabled" style="color: #7FA3CB;">Presenter</span>
-            <a class="dropdown-item" href="author-guidelines.html">Author guidelines</a>
-            <a class="dropdown-item" href="presentation-guidelines.html">Presentation guidelines</a>
-            <a class="dropdown-item" href="submissions.html">Submit paper</a>
-            <div class="dropdown-divider"></div>
-            <span class="dropdown-item disabled" style="color: #7FA3CB;">Non-presenter</span>
-            <a class="dropdown-item disabled-item" href="article/registration-is-closed.html">Register</a>
-          </div>
-        </li>
-        
-        <!-- MEDIA -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" data-toggle="dropdown">Media</a>
-          <div class="dropdown-menu dropdown-menu-right" role="menu">
-            <a target="_blank" class="dropdown-item" href="https://www.flickr.com/photos/icst/albums">Images from the conference</a>
-            <a target="_blank" class="dropdown-item" href="https://www.youtube.com/channel/UCQU0DiHt6DhN3h9ojnBId7Q">Videos from the conference</a>
-          </div>
-        </li>
-        
-        <!-- HELPS -->
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="#" data-toggle="dropdown">Helps</a>
-          <div class="dropdown-menu dropdown-menu-right scrollable-menu" role="menu">
-            <a class="dropdown-item" href="tutorial-edas-account-registration.html">EDAS tutorials</a>
-            <a class="dropdown-item" href="tutorial-scientificnet-account-registration.html">Scientific.Net tutorials</a>
-          </div>
-        </li>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About ICST</a></li>
+        <li class="nav-item"><a class="nav-link" href="symposia.html">Satellite events</a></li>
+        <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+        <li class="nav-item"><a class="nav-link" href="helps.html">Helps</a></li>
       </ul>
     </div>
     <!-- REGISTER -->
-    <a href="submissions.html" class="btn btn-success nav-register text-uppercase">Register</a>
+    <a href="submissions.html" class="btn btn-warning nav-register"><i class="fa fa-ticket"></i>&nbsp;Participate</a>
   </nav>
   
-  <!-- BREADCRUMBS -->
-  <div class="container">
-    <nav class="breadcrumb" style="background-color: transparent">
-      <a class="breadcrumb-item" href="../index.html">Home</a>
-      <a class="breadcrumb-item" href="symposia.html">Symposia</a>
-      <span class="breadcrumb-item active">Computer and Information Technology Symposium</span>
-    </nav>
-  </div>
-  
-  <!-- CONTENT -->
-  <div class="container pb-5">
-    <h1>Computer and Information Technology Symposium</h1>
-    <div class="row">
-      <div class="col-12">
-        <!-- Topics -->
-        <h2>Topics</h2>
-        <p align="justify">Artificial intelligence, 
-          Bioinformatics, 
-          Computational sciences, 
-          Computer graphics, 
-          Computer vision, 
-          Data sciences, 
-          Decision support system, 
-          E-government, 
-          Game design, 
-          Information system security, 
-          Knowledge discovery and data mining, 
-          Mobile computation, 
-          Modeling and simulation, 
-          Multimedia applications and technologies, 
-          Parallel computation, 
-          Pattern recognition, 
-          Signal and image processing, 
-          Soft computing, 
-          Software engineering and software testing, and 
-          Web technology.
-        </p>
-        
-        <!-- Submission -->
-        <h2>Submission</h2>
-        <p>If you are going to present your paper in this symposium, please make sure that you have done these following instructions:</p>
-        <ol type="1">
-          <li><a href="http://edas.info/N26926" target="_blank">Register <i class="fa fa-external-link"></i></a> your account to EDAS</li>
-          <li><a href="https://edas.info/newPaper.php?c=26926&track=99843" target="_blank">Submit your paper <i class="fa fa-external-link"></i></a> to EDAS. Ensure to follow the <a href="author-guidelines.html" target="_blank">paper template <i class="fa fa-external-link"></i></a>.</li>
-          <li>Your paper will go to the blind review. You can <a href="http://edas.info" target="_blank">check the status of your paper <i class="fa fa-external-link"></i></a> anytime from your account in EDAS.</li>
-          <li>Confirm the payment.*</li>
-          <li>Analyze the final paper.*</li>
-          <li>Submit your camera-ready.*</li>
-        </ol>
-        <p class="font-italic text-black-50">*Will be announced after the last notification of acceptance day.</p>
-      <p>If you still require further assistance, you can read <a href="tutorial-edas-account-registration.html">our tutorials</a> or <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
-      
-      <!-- Committee -->
-      <h2>Committee</h2>
-      <p class="card-text"><b>Coordinator:</b> Wahyono, Ph.D.<br />
-        <b>Members:</b><br />
-        Yunita Sari, Ph.D.<br>
-        Catur Atmaji, M.Cs.<br>
-        Nur Ahmad Sulistyo Putro, M.Cs.<br>
-        Airlangga Adi Hermawan, M.Sc.
-      </p>
-      
-      <!-- Contact -->
-      <h2>Contact person</h2>
-      <p class="card-text"><b>Wahyono, Ph.D.</b><br />
-        <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<a href="mailto:wahyo@ugm.ac.id">wahyo@ugm.ac.id</a></p>
+  <!-- SYMPOSIUM NAV -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-pattern-icst" style="border-bottom: 1px solid #eaeaf6">
+    <div class="dropdown">
+      <button class="btn btn-outline-secondary dropdown-toggle mr-2" title="Click here to choose another symposium" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Computer ...</button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <span class="dropdown-item disabled text-primary">Satellite events</span>
+        <a class="dropdown-item" href="computer-and-information-technology.html">Computer and Information Technology</a>
+        <a class="dropdown-item" href="electronics-power-communication-control-and-instrumentation.html">Electronics, Power, Communication, Control, and Instrumentation</a>
+        <a class="dropdown-item" href="geosience-and-environmental-management.html">Geoscience and Environmental Management</a>
+        <a class="dropdown-item" href="life-sciences-materials-and-applied-chemistry.html">Life Sciences, Materials, and Applied Chemistry</a>
+        <a class="dropdown-item" href="mechanical-and-industrial-engineering.html">Mechanical and Industrial Engineering</a>
+        <a class="dropdown-item" href="remote-sensing-and-geomatics.html">Remote Sensing and Geomatics</a>
       </div>
     </div>
-  </div>
+    <div class="nav nav-tabs" id="tabs-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About</a>
+      <a class="nav-item nav-link" id="nav-guide-tab" data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide" aria-selected="false"><i class="fa fa-edit"></i>&nbsp;&nbsp;Author guidelines</a>
+      <a class="nav-item nav-link" id="nav-submit-tab" data-toggle="tab" href="#nav-submit" role="tab" aria-controls="nav-submit" aria-selected="false"><i class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;Paper submission</a>
+    </div>
+  </nav>
   
-  <!-- SYMPOSIA IMAGE -->
-  <div class="jumbotron" style="background: url('../images/stock/computer-and-information-technology-large.jpg') center center fixed no-repeat; background-size: cover; padding: 2.5rem 1rem 0 1rem; border-top: 1px solid #eaf8f1; border-bottom: 1px solid #eaf8f1; margin-bottom: 0;">
-  </div>
-  
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container py-4" style="background-color: #f8f7fd;">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <img src="../images/logos/ugm.svg" class="px-3 my-2" height="50px">
-          <!-- <img src="../images/publication/ieee-logo.svg" class="px-3 my-2" height="50px"> -->
-          <img src="../images/publication/scientificnet-logo.svg" class="px-3 my-2" height="50px">
-          <img src="../images/publication/e3s-logo.svg" class="px-3 my-2" height="40px">
-          <img src="../images/publication/scopus.svg" class="px-3 my-2" height="50px">
-          <!-- <img src="../images/publication/ajstd-logo.svg" class="px-3 my-2" height="50px"> -->
-          <hr style="border-color: #e3e3f3; width: 80%;" class="mx-auto my-4">
-        </div>
-      </div>
-      <div class="row pt-2">
-        <div class="col-md-3">
-          <h5>The Conference</h5>
-          <p style="line-height: 2;">
-            <a href="about.html">About</a> <br>
-            <a href="venue.html">Venue</a> <br>
-            <a href="fees.html">Fees</a> <br>
-            <a href="symposia.html">Symposia</a> <br>
-            <!-- <a href="publications.html">Publications</a> <br> -->
-            <!-- <a href="downloads.html">Downloads</a> -->
-          </p>
-        </div>
-        <div class="col-md-3">
-          <h5>Connect</h5>
-          <p style="line-height: 2;">
-            <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<a href="mailto:icst@ugm.ac.id">icst@ugm.ac.id</a><br>
-            <i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;<a href="tel:+62-811-2567-950">+62-811-2567-950</a><br />
-            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/icstugm">@icstugm</a><br>
-            <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://instagram.com/icstugm">icstugm</a><br>
-            <i class="fa fa-flickr fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://flic.kr/icst">icst</a><br>
-            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/BPP_UGM">@BPP_UGM</a><br>
-            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/UGMYogyakarta">@UGMYogyakarta</a>
-          </p>
-        </div>
-        <div class="col-md-3">
-          <h5>Explore</h5>
-          <p style="line-height: 2;">
-            <a href="about-ugm.html">Universitas Gadjah Mada</a> <br>
-            <a target="_blank" href="https://www.yogyes.com/">The city of Yogyakarta</a> <br>
-            <a target="_blank" href="http://borobudurpark.com/">Ramayana Ballet</a>
-          </p>
-          <h5>Media</h5>
-          <p style="line-height: 2;">
-            <!-- <a href="article/icst-2017-in-images-and-words.html">Relive the ICST 2020</a> -->
-            <a target="_blank" href="https://www.flickr.com/photos/icst/albums">Flickr</a><br>
-            <a target="_blank" href="https://www.youtube.com/channel/UCQU0DiHt6DhN3h9ojnBId7Q">Youtube</a>
-          </p>
-        </div>
-        <div class="col-md-3">
-          <p class="text-center">
-            <img src="../images/logos/logo.svg" class="mb-2" height="55px"> <br>
-          </p>
-          <p>
-            <b>Chairman:</b> Dr.Eng. Ahmad Kusumaatmaja<br>
-            <b>Co-chairman:</b> Dr.Eng. Titis Wijayanto<br>
-            <b>Secretary:</b> Muhammad Rafieiy, S.Si.<br>
-            <b>Symposia coordinator:</b><br />
-            Wahyono, Ph.D.<br />
-            Ronald Adrian, M.Eng.<br />
-            Dr. Ratih Fitria Putri<br />
-            Taufik Abdillah Natsir, Ph.D.<br />
-            Achmad Pratama Rifai, Ph.D.<br />
-            Dr. Sandy Budi Wibowo
-          </p>
-        </div>
+  <!-- CONTENTS -->
+  <div class="tab-content" id="top">
+    <!-- General Information -->
+    <div class="tab-pane fade show active py-5" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
+      <div class="container">
         <div class="row">
-          <div class="container">
-            <hr class="mx-auto my-3" style="border-color: #e3e3f3; width: 80%;" />
-            <p class="text-muted text-justify">
-              The International Conference on Science and Technology 2020, organized by <a target="_blank" href="https://publikasi.ugm.ac.id/en/">BPP UGM</a>. Website developed by <a target="_blank" href="https://www.linkedin.com/in/rafieiy/">Rafieiy</a> with contributions from <a target="_blank" href="https://www.linkedin.com/in/wildan-ainurrahman-563948128/">Wildan A</a>.
-              UGM and ICST logos © Universitas Gadjah Mada.
-              Website © 2020 Badan Penerbit dan Publikasi UGM under the <a target="_blank" href="https://github.com/bppugm/icst-2020/blob/master/LICENSE.md">MIT License</a>, based on <a target="_blank" href="https://github.com/jaybaeta/icst-2017">ICST 2017 Website</a> by <a target="_blank" href="https://github.com/jaybaeta/">Joaquim Baeta</a> with <a target="_blank" href="http://icst.ugm.ac.id/2019">modification</a>, using <a target="_blank" href="https://getbootstrap.com/docs/4.4/">Bootstrap 4.4.1</a>.
-              Website content is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where otherwise noted.
-              Icons by <a target="_blank" href="http://fontawesome.io">Font Awesome</a>(by Dave Gandy; <a target="_blank" href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>; <a target="_blank" href="http://opensource.org/licenses/mit-license.html">MIT</a>), <a target="_blank" href="https://www.iconfinder.com/webalys">Webalys</a> (free for commercial use), <a target="_blank" href="https://www.iconfinder.com/bocatutor">Boca Tutor</a> (<a target="_blank" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>), <a target="_blank" href="https://www.iconfinder.com/Sergt">Sergey Toropov</a> (free for commercial use), and Joaquim Baeta (<a target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>).
-              Jumbotron background by <a target="_blank" href="https://www.linkedin.com/in/rafieiy/">Rafieiy</a> based on <a href="https://www.freepik.com/free-vector/halftone-texture-frame-with-text-space_2543378.htm">Starline</a> (free for comercial use).
-              Symposia images by <a target="_blank" href="https://flic.kr/p/NLBeFd">Ars Electronica</a> (<a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>), <a target="_blank" href="https://flic.kr/p/9773UW">Ched Cheddles</a> (<a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>), <a target="_blank" href="https://flic.kr/p/27f3hV5">Kreemerz</a> (<a target="_blank" href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>), <a target="_blank" href="https://www.pexels.com/photo/two-test-tubes-954585/">Martin Lopez</a> (free for personal and commercial use), <a target="_blank" href="https://www.pexels.com/photo/gray-and-gold-steel-gears-159275/">Pixabay</a> (free for personal and commercial use), <a target="_blank" href="https://www.pexels.com/photo/people-in-boat-near-water-dam-1259924/">Ali Madad</a> (free for personal and commercial use), and <a target="_blank" href="https://flic.kr/p/UyzZWb">NASA's Marshall Space Flight Center</a> (<a target="_blank" href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>).
-            </p>
+          <div class="col-md-4 col-sm-6">
+            <!-- symposium image -->
+            <div class="jumbotron rounded-lg" style="background: url('../images/stock/computer-and-information-technology-large.jpg') center fixed no-repeat; background-size: cover; filter: drop-shadow(8px 8px 10px grey);">
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-6">
+            <a href="symposia.html"><small><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;All Symposia</small></a>
+            <h2 class="py-3">Computer and Information Technology Symposium</h2>
+            <div class="row">
+              <div class="col-md-8 col-sm-6">
+                <!-- topics -->
+                <h4 id="#topics">Topics</h4>
+                <p align="justify">Artificial intelligence, 
+                  Bioinformatics, 
+                  Computational sciences, 
+                  Computer graphics, 
+                  Computer vision, 
+                  Data sciences, 
+                  Decision support system, 
+                  E-government, 
+                  Game design, 
+                  Information system security, 
+                  Knowledge discovery and data mining, 
+                  Mobile computation, 
+                  Modeling and simulation, 
+                  Multimedia applications and technologies, 
+                  Parallel computation, 
+                  Pattern recognition, 
+                  Signal and image processing, 
+                  Soft computing, 
+                  Software engineering and software testing, and 
+                  Web technology.
+                </p>
+              </div>
+              <div class="col-md-4 col-sm-6" style="border-left: solid 1px grey;">
+                <!-- committee -->
+                <h4 id="committee">Committee</h4>
+                <p class="card-text small">
+                  <b>Coordinator</b><br>
+                  Wahyono, Ph.D.<br><br>
+                  <b>Members</b><br>
+                  Yunita Sari, Ph.D.<br>
+                  Catur Atmaji, M.Cs.<br>
+                  Nur Ahmad Sulistyo Putro, M.Cs.<br>
+                  Airlangga Adi Hermawan, M.Sc.<br><br>
+                  <!-- contact -->
+                  <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<b>Contact person</b><br>
+                  Wahyono, Ph.D.<br>
+                  <a href="mailto:wahyo@ugm.ac.id">wahyo@ugm.ac.id</a>
+                </p>
+              </div>
+            </div>
+            <p class="pt-5"><small>Symposium image by <a target="_blank" href="https://flic.kr/p/NLBeFd">Ars Electronica</a> (<a target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/2.0/"><i class="fa fa-creative-commons fa-fw" aria-hidden="true"></i>&nbsp;BY-NC-ND 2.0</a>)</small></p>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
-  </html>
+    </div>
+    
+    <!-- Author Guidelines -->
+    <div class="tab-pane fade py-5" id="nav-guide" role="tabpanel" aria-labelledby="nav-guide-tab">
+      <div class="container">
+        <h2 id="guide" class="pt-3">Preparing your manuscript</h2>
+        <div class="row">
+          <div class="col-md-10 col-sm-6">
+            <!-- preparing your manuscript -->
+            <!-- <h4 id="paper-guidelines"></h4> -->
+            <p>
+              <ol style="padding-left: 15px;">
+                <li>Papers topic should conform to the scope of the conference/symposium. <a href="computer-and-information-technology.html"><small><i class="fa fa-undo"></i>&nbsp;&nbsp;Read the topics</small></a></li>
+                <li>Submitted manuscript must be original work and should not have been previously published or presented at another meeting. </li>
+                <li>Manuscript should be written in English (US), with font type Times New Roman.</li>
+                <li>Abstract should be no more than 200 words (excluding abstract title, authors, and affiliations), with A4 Paper size in <code>DOC</code> or <code>PDF</code> format, and written at least four pages long or six pages in maximum.</li>
+                <li>The template modified in Ms Word 2007 and saved as a “Word 97–2003 Document” for the PC, provides authors with most of the formatting specifications needed for preparing electronic versions of their papers. Margins, column widths, line spacing, and font sizes are built-in.
+                  <ul>
+                    <li>Font sizes. Title	(24 pt); Author and abstract (9 pt); Content (10 pt); and Figure label (8 pt).</li>
+                    <li>Margins of 1st page. Top (0.95 cm); Left (1.57 cm); Bottom (2.54 cm); Right (1.57 cm).</li>
+                    <li>Margins of the 2nd to 6th pages. Top (1.9 cm); Left (1.6 cm); Bottom	(2.54 cm); Right	(1.6 cm).</li>
+                  </ul>
+                </li>
+                <li>Make sure the listed artworks have the best resolution for printing (300 DPI).</li>
+                <li>For both primary and co-authors, credentials along with their full names and email addresses must be included. If co-authors are from different institutions, the secondary institution(s) and the institution investigators are associate with must be listed.</li>
+              </ol>
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-6" style="border-left: solid 1px grey;">
+            <h4 class="pb-3">Documents</h4>
+            <a href="../downloads/ICST2020-template1.zip" class="pt-3 text-secondary" title="Click here to download Computer and Information Technology template">
+              <div class="row">
+                <div class="col-4">
+                  <p class="text-center">
+                    <span class="badge badge-light p-3"><i class="fa fa-file-archive-o fa-2x text-secondary"></i></span></p></div>
+                    <div class="col-8 text-left">
+                      <small>Paper template<br><span class="text-monospace">1.78 MB</span></small>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <p>
+            </p>
+          </div>
+          <!-- NEXT STEPS -->
+          <section class="alert alert-success">
+            <div class="container">
+              <div class="row p-4">
+                <div class="col-lg-9 col-sm-6">
+                  <div class="card" style="border-color: transparent; background-color: transparent; height: 100%">
+                    <p>Once your manuscript has been prepared, you have to submit it in the your EDAS account.<br>
+                      This button will navigate you to the submission page.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 d-none d-lg-block">
+                    <div class="card" style="border-color: transparent; background-color: transparent; height: 100%">
+                      <a href="https://edas.info/newPaper.php?c=26926&track=99843" target="_blank" class="btn btn-primary text-uppercase"><code class="text-uppercase" style="background-color:#1d73cc; color:#fff;">EDAS</code><br>Paper submission</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+    </div>
+          
+    <!-- Paper Submission -->
+    <div class="tab-pane fade" id="nav-submit" role="tabpanel" aria-labelledby="nav-submit-tab">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f7fd; border-bottom: 1px solid #eaeaf6">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><code class="alert-secondary">1</code> Create an account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Activate your account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Submit manuscript</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container">
+      <!-- Submission steps -->
+      <h4 id="submission">Submission steps</h4>
+      <p>If you are going to present your paper in this symposium, please make sure that you have done these following instructions:</p>
+      <ol type="1">
+        <li><a href="http://edas.info/N26926" target="_blank">Register <i class="fa fa-external-link"></i></a> your account to EDAS</li>
+        <li><a >Submit your paper <i class="fa fa-external-link"></i></a> to EDAS. Ensure to follow the <a href="author-guidelines.html" target="_blank">paper template <i class="fa fa-external-link"></i></a>.</li>
+        <li>Your paper will go to the blind review. You can <a href="http://edas.info" target="_blank">check the status of your paper <i class="fa fa-external-link"></i></a> anytime from your account in EDAS.</li>
+        <li>Confirm the payment.*</li>
+        <li>Analyze the final paper.*</li>
+        <li>Submit your camera-ready.*</li>
+      </ol>
+      <p class="font-italic text-black-50">*Will be announced after the last notification of acceptance day.</p>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active py-5" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <!-- EDAS account registration tutorial -->
+          <h4 id="account-registration-tutorial">Account registration</h4>
+          <div class="col-12">
+            <p style="font-size: 1.25rem; font-weight: 300">This tutorial will guide you through the registration of your EDAS account. If you already have an EDAS account, please <a target="_blank" href="http://edas.info/N26926"> log in <i class="fa fa-external-link"></i></a> to submit your paper using your registered account.</p>
+            <div class="row">
+              <div class="col-lg-2 col-sm-6"><code>Action 1</code></div>
+              <div class="col-lg-10 col-sm-6">
+                <h5 style="font-weight: 700;">Go to the ICST UGM 2020 EDAS site</h5>
+                <p>Click the <code>Register</code> button on the ICST website.</p>
+                <img src="../images/tutorials/register.png" class="rounded mb-3 img-tutorial">
+                  <p>Then, click the <code>Submit paper</code> button under the EDAS card, which will redirect you to the ICST UGM 2020 EDAS website.</p>
+                <img src="../images/tutorials/edas/edas-submit-paper.png" class="rounded mb-3 img-tutorial">
+              </div>
+                      
+              <hr style="width: 90%" class="my-3">
+                      
+                      <div class="col-lg-2 col-sm-6"><code>Action 2</code></div>
+                      <div class="col-lg-10 col-sm-6">
+                        <h5 style="font-weight: 700;">Create a new account</h5>
+                        <p>Below the login form, click <code>Create a new account</code>.</p>
+                        <img src="../images/tutorials/edas/edas-create-new-account.png" class="rounded mb-3 img-tutorial">
+                      </div>
+                      
+                      <hr style="width: 90%" class="my-3">
+                      
+                      <div class="col-lg-2 col-sm-6"><code>Action 3</code></div>
+                      <div class="col-lg-10 col-sm-6">
+                        <h5 style="font-weight: 700;">Entry your details</h5>
+                        <p>Type your information in the required fields (marked with a red asterisk), you can complete other information after the registration.<br>At the end of the form, tick the box “I consent to the EDAS privacy and policies”, and click <code>Add this person</code> to create your account.</p>
+                        <img src="../images/tutorials/edas/edas-create-new-account-2.png" class="rounded mb-3 img-tutorial">
+                        <p>Your account has been created. Your username and ID number will be sent to your email.</p>
+                        <img src="../images/tutorials/edas/edas-create-new-account-3.png" class="rounded mb-3 img-tutorial">
+                      </div>
+                      
+                      <hr style="width: 90%" class="my-3">
+                      
+                      <div class="col-lg-2 col-sm-6"><code>Action 4</code></div>
+                      <div class="col-lg-10 col-sm-6">
+                        <h5 style="font-weight: 700;">Set up your password</h5>
+                        <p>Set up your initial password by clicking the link on your email. You could find the email in your inbox or spam mail.</p>
+                        <img src="../images/tutorials/edas/edas-create-new-account-4.png" class="rounded mb-3 img-tutorial">
+                        <p>Your initial password has been created.<br>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="tab-pane fade py-5" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <!-- EDAS account activation -->
+                  <h4 id="account-activation-tutorial">Account activation</h4>
+                  <div class="container pb-5">
+                    <iframe class="d-none d-md-block" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="750" height="890" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    <iframe class="d-block d-sm-none" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="330" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                  </div>
+                </div>
+                
+                <div class="tab-pane fade py-5" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  <!-- EDAS paper submission tutorial -->
+                  <h4 id="paper-submission-tutorial">Paper submission tutorial</h4>
+                  <div class="col-12">
+                    <p style="font-size: 1.25rem; font-weight: 300">
+                      This tutorial will guide you through the submission of your paper.
+                    </p>
+                    <!-- TERMS ALERT -->
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                      <ul class="fa-ul" style="margin-bottom: 0rem;">
+                        <li>In order to maximize our services, you need to complete the following details before submitting your paper:</li>
+                        <li><i class="fa fa-user fa-li" aria-hidden="true"></i><a target="_blank" href="http://edas.info/N26926" class="alert-link">The registered EDAS account <i class="fa fa-external-link alert-link"></i></a> of all authors in your paper.</li>
+                        <li><i class="fa fa-clipboard fa-li" aria-hidden="true"></i>Paper format and content in accordance with the <a href="author-guidelines.html" class="alert-link"> author guidelines <i class="fa fa-external-link alert-link"></i></a>.</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-lg-2 col-sm-3"><code>Action 1</code></div>
+                      <div class="col-lg-10 col-sm-9">
+                        <h5 style="font-weight: 700;">Log in to the ICST UGM 2020 EDAS site</h5>
+                        <p>Click the <code>Register</code> button on the ICST website.</p>
+                        <img src="../images/tutorials/register.png" class="rounded mb-3 img-tutorial">
+                        <p>Then, click the <code>Submit paper</code> button under the EDAS card, which will redirect you to the ICST UGM 2020 EDAS website.</p>
+                        <img src="../images/tutorials/edas/edas-submit-paper.png" class="rounded mb-3 img-tutorial">
+                        <p>Log in to your EDAS account.</p>
+                        <img src="../images/tutorials/edas-login.png" class="rounded mb-3 img-tutorial">
+                      </div>
+                      
+                      <hr style="width: 90%" class="my-3" />
+                      
+                      <div class="col-lg-2 col-sm-3"><code>Action 2</code></div>
+                      <div class="col-lg-10 col-sm-9">
+                        <h5 style="font-weight: 700;">Entry your paper details</h5>
+                        <p>Once you are <a target="_blank" href="http://edas.info/N26926">logged in <i class="fa fa-external-link"></i></a>, click the <code>symposium name</code> &mdash;under the Track column&mdash;that matches on your paper to be registered.</p>
+                        <img src="../images/tutorials/edas/edas-submit-new-paper.png" class="rounded mb-3 img-tutorial">
+                        <p>Enter your paper details, tick the box “Add yourself as author” and click <code>Submit</code> button to register your paper.</p>
+                        <img src="../images/tutorials/edas/edas-submit-new-paper-2.png" class="rounded mb-3 img-tutorial">
+                        <p>Your paper has successfully been submitted. You will now be able to view your paper in your EDAS account.</p>
+                      </div>
+                      
+                      <hr style="width: 90%" class="my-3" />
+                      
+                      <div class="col-lg-2 col-sm-3"><code>Action 3</code></div>
+                      <div class="col-lg-10 col-sm-9">
+                        <h5 style="font-weight: 700;">Add your paper's author(s)</h5>
+                        <p>Click <code>Add authors</code> to add your co-authors (if available).</p>
+                        <img src="../images/tutorials/edas/edas-add-other-author.png" class="rounded mb-3 img-tutorial">
+                        <p>Write your co-author’s name, EDAS ID, or email address. Alternatively, you can simply select your co-author’s name from the co-author list. Then, click <code>Add author</code> button.</p>
+                        <img src="../images/tutorials/edas/edas-add-other-author-2.png" class="rounded mb-3 img-tutorial">
+                        <p>Select the radio button before your co-author’s name and click <code>Select this person</code> button to confirm it.</p>
+                        <img src="../images/tutorials/edas/edas-add-other-author-3.png" class="rounded mb-3 img-tutorial">
+                      </div>
+                      
+                      <hr style="width: 90%" class="my-3" />
+                      
+                      <div class="col-lg-2 col-sm-3"><code>Action 4</code></div>
+                      <div class="col-lg-10 col-sm-9">
+                        <h5 style="font-weight: 700;">Upload your paper's document</h5>
+                        <p>After adding your co-author, click <code>Upload the manuscript</code> to upload your paper document.</p>
+                        <img src="../images/tutorials/edas/edas-upload-document.png" class="rounded mb-3 img-tutorial">
+                        <p>Tick the box “I have checked that the authors listed in the manuscript are the same as the current list of authors on the paper record”, choose your paper document, and click <code>Upload ...</code> button.</p>
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                          <ul class="fa-ul" style="margin-bottom: 0rem;">
+                            <li><i class="fa fa-exclamation-triangle fa-li" aria-hidden="true"></i> Please ensure your document is in the <code>DOC</code>, <code>DOCX</code>, or <code>PDF</code> format.</li>
+                          </ul>
+                        </div>
+                        <img src="../images/tutorials/edas/edas-upload-document-2.png" class="rounded mb-3 img-tutorial">
+                        <p>Your paper has been uploaded.</p>
+                        <img src="../images/tutorials/edas/edas-upload-document-3.png" class="rounded mb-3 img-tutorial">
+                        <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
+                      </div>
+                    </div>
+                  </div>        
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="px-5 text-right"><a href="#top" class="small">Back to top&nbsp;<i class="fa fa-arrow-circle-up"></i></a></p>
+        </div>
+        
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="container py-4" style="background-color: #f8f7fd;">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <img src="../images/logos/ugm.svg" class="px-3 my-2" height="50px">
+                <!-- <img src="../images/publication/ieee-logo.svg" class="px-3 my-2" height="50px"> -->
+                <img src="../images/publication/scientificnet-logo.svg" class="px-3 my-2" height="50px">
+                <img src="../images/publication/e3s-logo.svg" class="px-3 my-2" height="40px">
+                <img src="../images/publication/scopus.svg" class="px-3 my-2" height="50px">
+                <!-- <img src="../images/publication/ajstd-logo.svg" class="px-3 my-2" height="50px"> -->
+                <hr style="border-color: #e3e3f3; width: 80%;" class="mx-auto my-4">
+              </div>
+            </div>
+            <div class="row pt-2">
+              <div class="col-md-3">
+                <h5>The Conference</h5>
+                <p style="line-height: 2;">
+                  <a href="about.html">About</a> <br>
+                  <a href="venue.html">Venue</a> <br>
+                  <a href="fees.html">Fees</a> <br>
+                  <a href="symposia.html">Symposia</a> <br>
+                  <!-- <a href="publications.html">Publications</a> <br> -->
+                  <!-- <a href="downloads.html">Downloads</a> -->
+                </p>
+              </div>
+              <div class="col-md-3">
+                <h5>Connect</h5>
+                <p style="line-height: 2;">
+                  <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<a href="mailto:icst@ugm.ac.id">icst@ugm.ac.id</a><br>
+                  <i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;<a href="tel:+62-811-2567-950">+62-811-2567-950</a><br />
+                  <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/icstugm">@icstugm</a><br>
+                  <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://instagram.com/icstugm">icstugm</a><br>
+                  <i class="fa fa-flickr fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://flic.kr/icst">icst</a><br>
+                  <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/BPP_UGM">@BPP_UGM</a><br>
+                  <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/UGMYogyakarta">@UGMYogyakarta</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <h5>Explore</h5>
+                <p style="line-height: 2;">
+                  <a href="about-ugm.html">Universitas Gadjah Mada</a> <br>
+                  <a target="_blank" href="https://www.yogyes.com/">The city of Yogyakarta</a> <br>
+                  <a target="_blank" href="http://borobudurpark.com/">Ramayana Ballet</a>
+                </p>
+                <h5>Media</h5>
+                <p style="line-height: 2;">
+                  <!-- <a href="article/icst-2017-in-images-and-words.html">Relive the ICST 2020</a> -->
+                  <a target="_blank" href="https://www.flickr.com/photos/icst/albums">Flickr</a><br>
+                  <a target="_blank" href="https://www.youtube.com/channel/UCQU0DiHt6DhN3h9ojnBId7Q">Youtube</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <p class="text-center">
+                  <img src="../images/logos/logo.svg" class="mb-2" height="55px"> <br>
+                </p>
+                <p>
+                  <b>Chairman:</b> Dr.Eng. Ahmad Kusumaatmaja<br>
+                  <b>Co-chairman:</b> Dr.Eng. Titis Wijayanto<br>
+                  <b>Secretary:</b> Muhammad Rafieiy, S.Si.<br>
+                  <b>Symposia coordinator:</b><br />
+                  Wahyono, Ph.D.<br />
+                  Ronald Adrian, M.Eng.<br />
+                  Dr. Ratih Fitria Putri<br />
+                  Taufik Abdillah Natsir, Ph.D.<br />
+                  Achmad Pratama Rifai, Ph.D.<br />
+                  Dr. Sandy Budi Wibowo
+                </p>
+              </div>
+              <div class="row">
+                <div class="container">
+                  <hr class="mx-auto my-3" style="border-color: #e3e3f3; width: 80%;" />
+                  <p class="text-muted text-justify small">
+                    © 2020 <a target="_blank" href="https://publikasi.ugm.ac.id/en/">Badan Penerbit dan Publikasi UGM</a>. Website developed by <a target="_blank" href="https://www.linkedin.com/in/rafieiy/">Rafieiy</a> using <a target="_blank" href="https://getbootstrap.com/docs/4.4/">Bootstrap 4.4.1</a>, and licenced as <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, <a target="_blank" href="https://github.com/bppugm/icst-2020/blob/master/LICENSE.md">unless otherwise stated</a>.
+                    UGM and ICST logos © Universitas Gadjah Mada. Icons by <a target="_blank" href="http://fontawesome.io">Font Awesome</a> (by Dave Gandy; <a target="_blank" href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>; <a target="_blank" href="http://opensource.org/licenses/mit-license.html">MIT</a>).
+                    The International Conference on Science and Technology 2020, organized by <a target="_blank" href="https://publikasi.ugm.ac.id/en/">BPP UGM</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </body>
+        </html>
