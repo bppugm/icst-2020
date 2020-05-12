@@ -75,13 +75,13 @@
       <div class="card">
         <div class="card-header" id="submitManuscript">
           <h2 class="mb-0">
-            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
               Submit a manuscript
             </button>
           </h2>
         </div>
     
-        <div id="collapseOne" class="collapse show" aria-labelledby="submitManuscript" data-parent="#supportdion">
+        <div id="collapse1" class="collapse show" aria-labelledby="submitManuscript" data-parent="#supportdion">
           <div class="card-body">
             <ol type="1">
               <li>If you want to submit a manuscript, you need to click the <code><i class="fas fa-ticket-alt"></i>&nbsp;Participate</code> button.</li>
@@ -97,17 +97,85 @@
       <div class="card">
         <div class="card-header" id="EDASaccess">
           <h2 class="mb-0">
-            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
               I cannot access my EDAS account
             </button>
           </h2>
         </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="EDASaccess" data-parent="#supportdion">
+        <div id="collapse2" class="collapse" aria-labelledby="EDASaccess" data-parent="#supportdion">
           <div class="card-body">
             <ul>
               <li>If you create a new EDAS account, you need to send an email to <a href="mailto:help@edas.info" target="_blank">help@edas.info</a> and fill the activation form in the symposium page. This activation need a day or more because EDAS team will activate it manually.</li>
               <li>If you forgot your password, you can reset it from <a href="https://edas.info" target="_blank">EDAS page <i class="fa fa-external-link-square-alt"></i></a> by clicking the icon <i class="fa fa-sync-alt"></i>.</li>
             </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Scientific.Net account -->
+      <div class="card">
+        <div class="card-header" id="ScientificNetaccess">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              I cannot access my Scientific.Net account
+            </button>
+          </h2>
+        </div>
+        <div id="collapse3" class="collapse" aria-labelledby="ScientificNetaccess" data-parent="#supportdion">
+          <div class="card-body">
+            <ul>
+              <li>If you already have a Scientific.Net account, you need to request an account activation in the <code><i class="fas fa-paper-plane"></i>&nbsp;Paper Submission</code> tab from the <a href="life-sciences-materials-and-applied-chemistry.html">Life Sciences, Materials, and Applied Chemistry symposium page <i class="fas fa-external-link-square-alt"></i></a>. Click <code><i class="fas fa-user-check"></i>&nbsp;Activate your account</code> tab and fill the activation request form. This activation need a day or more because the administrator will activate it manually. If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</li>
+              <li>If you forgot your password, you can reset it from <a href="https://main.scientific.net/Account/ForgotPassword" target="_blank">Scientific.Net page <i class="fa fa-external-link-square-alt"></i></a> and enter your registered email address.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Difference between presenter and non-presenter -->
+      <div class="card">
+        <div class="card-header" id="diffPresenterNonpresenter">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Difference between presenter and non-presenter
+            </button>
+          </h2>
+        </div>
+        <div id="collapse4" class="collapse" aria-labelledby="diffPresenterNonpresenter" data-parent="#supportdion">
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr class="bg-primary text-white">
+                  <th></th>
+                  <th>Presenter</th>
+                  <th>Non-presenter</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" style="padding-left: 3em;">Need to register</th>
+                  <td><i class="fas fa-check-circle text-success"></i>&nbsp;Yes</td>
+                  <td><i class="fas fa-check-circle text-success"></i>&nbsp;Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="padding-left: 3em;">Need to submit a manuscript</th>
+                  <td><i class="fas fa-check-circle text-success"></i>&nbsp;Yes, at least one manuscript</td>
+                  <td><i class="fas fa-times-circle text-danger"></i>&nbsp;No need</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="padding-left: 3em;">Need to deliver the paper</th>
+                  <td><i class="fas fa-check-circle text-success"></i>&nbsp;Yes, only one person per paper</td>
+                  <td><i class="fas fa-times-circle text-danger"></i>&nbsp;No need</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="padding-left: 3em;">Can join the discussion</th>
+                  <td><i class="fas fa-check-circle text-success"></i>&nbsp;Yes</td>
+                  <td><i class="fas fa-check-circle text-success"></i>&nbsp;Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row" style="padding-left: 3em;">Registration date</th>
+                  <td>1 February to 31 May</td>
+                  <td>1 June to 27 July</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -144,6 +212,7 @@
         </button>
         <div class="collapse navbar-collapse" id="footer-nav">
           <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Important dates</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">Committee</a></li>
             <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
             <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
