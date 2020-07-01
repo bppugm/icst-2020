@@ -311,7 +311,7 @@
             </li>
             <!-- analyze -->
             <li class="nav-item">
-              <a class="nav-link" id="pills-analyze-tab" data-toggle="pill" href="#pills-analyze" role="tab" aria-controls="pills-analyze" aria-selected="false">
+              <a class="nav-link active" id="pills-analyze-tab" data-toggle="pill" href="#pills-analyze" role="tab" aria-controls="pills-analyze" aria-selected="false">
                 <div class="row">
                   <div class="col-4">
                     <p class="text-center">
@@ -326,7 +326,7 @@
             </li>
             <!-- pay -->
             <li class="nav-item">
-              <a class="nav-link active" id="pills-pay-tab" data-toggle="pill" href="#pills-pay" role="tab" aria-controls="pills-pay" aria-selected="true">
+              <a class="nav-link" id="pills-pay-tab" data-toggle="pill" href="#pills-pay" role="tab" aria-controls="pills-pay" aria-selected="true">
                 <div class="row">
                   <div class="col-4">
                     <p class="text-center">
@@ -356,7 +356,7 @@
             </li>
             <!-- copyright -->
             <li class="nav-item">
-              <a class="nav-link" id="pills-copyright-tab" data-toggle="pill" href="#pills-copyright" role="tab" aria-controls="pills-copyright" aria-selected="false">
+              <a class="nav-link disabled" id="pills-copyright-tab" data-toggle="pill" href="#pills-copyright" role="tab" aria-controls="pills-copyright" aria-selected="false">
                 <div class="row">
                   <div class="col-4">
                     <p class="text-center">
@@ -380,7 +380,6 @@
               <!-- EDAS account registration tutorial -->
               <div class="tab-pane fade py-5" id="pills-create" role="tabpanel" aria-labelledby="pills-create-tab">
                 <p class="alert alert-info">This tutorial will guide you through creating your EDAS account. If you already have an EDAS account, please <a target="_blank" class="alert-link" href="https://edas.info/newPaper.php?c=26926&track=99843"> log in <i class="fas fa-external-link-square-alt"></i></a> to submit your manuscript using your registered account.</p>
-                <div class="col-12">
                   <div class="row">
                     
                     <div class="col-lg-2 col-sm-6"><code>Action 1</code></div>
@@ -412,7 +411,6 @@
                     </div>
                     
                   </div>
-                </div>
               </div>
               
               <!-- EDAS account activation -->
@@ -425,7 +423,6 @@
               
               <!-- EDAS paper submission tutorial -->
               <div class="tab-pane fade py-5" id="pills-submit" role="tabpanel" aria-labelledby="pills-submit-tab">
-                <div class="col-12">
                   <div class="alert alert-info" style="padding-bottom: -5px;">This tutorial will guide you through the submission of your manuscript. In order to maximize our services, you need to complete the following details before submitting your manuscript:
                     <ul>
                       <li>The registered EDAS account of all authors in your manuscript.</li>
@@ -487,8 +484,7 @@
                     
                   </div>
                   
-                </div>
-                
+ 
               </div>
               
               <!-- Review -->
@@ -497,16 +493,16 @@
               </div>
 
               <!-- Check your manuscript -->
-              <div class="tab-pane fade py-5" id="pills-analyze" role="tabpanel" aria-labelledby="pills-analyze-tab">
-                <p class="alert alert-info text-center">Your paper will go to the blind review.<br>You can <a class="alert-link" href="http://edas.info" target="_blank">check the status of your paper <i class="fas fa-external-link-square-alt"></i></a> anytime from your account in EDAS.</p>
+              <div class="tab-pane fade show active py-5" id="pills-analyze" role="tabpanel" aria-labelledby="pills-analyze-tab">
+                <p class="alert alert-info">After you got the notification of acceptance, you need to re-check your paper format and content. This tutorial will guide you through analyzing your camera-ready manuscript.</p>
                 
                 <div class="row">
                   <div class="col-lg-2 col-sm-6"><code>Action 1</code></div>
                   <div class="col-lg-10 col-sm-6">
                     <h5 style="font-weight: 700;">Check your paper format and content</h5>
-                    <p>The submitted camera-ready paper should be written according to the <a href="author-guidelines.html">author guidelines</a> <a target="_blank" href="author-guidelines.html"><i class="fa fa-external-link"></i></a>.</p>
+                    <p>The submitted camera-ready paper should be written according to the author guidelines.</p>
                     <div class="alert alert-danger">
-                      <p>The corresponding author have to check the title, list of authors, and their affiliations in the EDAS system and their paper. Any revision could not be made after uploading the camera-ready version by <b>July 8</b>.</p>
+                      <p>The corresponding author have to check the title, list of authors, and their affiliations in the EDAS system and their paper. Any revision could not be made after uploading the camera-ready version by <b>August 10</b>.</p>
                     </div>
                   </div>
                   
@@ -515,9 +511,8 @@
                   <div class="col-lg-2 col-sm-6"><code>Action 2</code></div>
                   <div class="col-lg-10 col-sm-6">
                     <h5 style="font-weight: 700;">Analyze your camera-ready document</h5>
-                    <p>All submitted <code>PDF</code> documents must have passed the PDF analyzer in each publisher. We highly recommend that you keep a backup of your <code>DOC</code> camera-ready document on your computer or another file storage.</p>
+                    <p>The submitted <code>PDF</code> document must have passed the PDF eXpress™ Plus. We highly recommend that you keep a backup of your <code>DOC</code> camera-ready document on your computer or another file storage.</p>
                     
-                    <div class="container">
                       <div class="row">
                         <div class="col-lg-4 col-sm-6">
                           <div class="card" style="border-color: transparent; height: 100%">
@@ -526,122 +521,84 @@
                         </div>
                         <div class="col-lg-8 col-sm-6">
                           <div class="card" style="border-color: transparent; height: 100%">
-                            <p><b><a href="https://www.pdf-express.org/">PDF eXpress™ Plus</a></b> is used to ensure the document are match with IEEE Xplore® compliance. The service is free of charge for ICST 2019 authors using <code>Conference ID: 47872XP</code>. Read <a target="_blank" href="https://www.pdf-express.org/frhelpnologin.asp">how to use IEEE PDF eXpress™ <i class="fa fa-external-link"></i></a>.</p>
-                            <p>For a new user, you need to create <a href="https://www.pdf-express.org/contributor.asp">a new PDF eXpress™ account</a>.</p>
+                            <p><b><a href="https://www.pdf-express.org/">PDF eXpress™ Plus</a></b> is used to ensure the document are match with IEEE Xplore® compliance. The service is free of charge for ICST 2020 authors using <code>Conference ID: 50505XP</code>. Read <a target="_blank" href="https://www.pdf-express.org/frhelpnologin.asp">how to use IEEE PDF eXpress™ <i class="fas fa-external-link-square-alt"></i></a>.</p>
+                            <p>For a new user, you need to create <a href="https://www.pdf-express.org/contributor.asp" target="_blank">a new PDF eXpress™ account <i class="fas fa-external-link-square-alt"></i></a>.</p>
                             <a href="https://www.pdf-express.org/" class="btn btn-primary">Analyze using PDF eXpress™ Plus</a>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    
-                    <hr style="width: 90%" class="my-3">
-                    
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                          <div class="card" style="border-color: transparent; height: 100%">
-                            <img class="card-img-bottom img-fluid" src="../images/stock/environmental-and-earth-science.jpg" alt="IOP Publishing">
-                          </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-6">
-                          <div class="card" style="border-color: transparent; height: 100%">
-                            <p><b><a href="http://pdf-analyser.edpsciences.org/">EDP Sciences PDF Analyser</a></b> is used to ensure the document has embedded fonts and good-quality images for the conference proceeding. The service is free of charge. You can use this service to analyze your paper from Environmental and Earth Science symposium.</p>
-                            <a href="http://pdf-analyser.edpsciences.org/" class="btn btn-primary">Analyze using EDP Sciences PDF Analyser</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
 
               <!-- Pay the fees -->
-              <div class="tab-pane fade show active py-5" id="pills-pay" role="tabpanel" aria-labelledby="pills-pay-tab">
-                <p class="alert alert-info text-center">The payment of accepted paper will be opened after on <b>July 1</b>.<br>You can prepare your camera-ready paper first before the registration opened.</p>
-                <div class="col-12">
-                  <p style="font-size: 1.25rem; font-weight: 300">This tutorial will guide you through the payment of your paper.</p>
-                  <!-- TERMS ALERT -->
-                  <div class="alert alert-info alert-dismissible fade show" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <ul class="fa-ul" style="margin-bottom: 0rem;">
-                      <li><i class="fa fa-exclamation-triangle fa-li" aria-hidden="true"></i>The camera-ready submission can be done after <a href="tutorial-edas-payment-confirmation.html" class="alert-link">your payment has been verified</a>. Read the <a href="fees.html" class="alert-link">conference fees</a> to know how much do you need to pay.</li>
-                      <li>One presenter can only present one paper. However, one presenter can present more than one paper.</li>
-                    </ul>
-                  </div>
+              <div class="tab-pane fade py-5" id="pills-pay" role="tabpanel" aria-labelledby="pills-pay-tab">
+                <p class="alert alert-info">This tutorial will guide you through the payment of your paper. Please note that the camera-ready submission can be done after your payment has been verified. One paper can only be delivered by one presenter. However, one presenter can deliver more than one paper.</p>
                   
                   <div class="row">
                     <div class="col-lg-2 col-sm-6"><code>Action 1</code></div>
                     <div class="col-lg-10 col-sm-6">
                       <h5 style="font-weight: 700;">Find out how much you have to pay</h5>
-                      <p>Read the <a href="fees.html" target="_blank">conference fees table <i class="fas fa-external-link-square-alt"></i></a></p>
+                      <p>Read the <a href="fees.html" class="alert-link">conference fees <i class="fas fa-external-link-square-alt"></i></a> to know how much do you need to pay.</p>
                     </div>
+                  </div>
+                  
+                  <hr style="width: 90%" class="my-3">
                     
-                    <hr style="width: 90%" class="my-3">
-                    
+                  <div class="row">
                     <div class="col-lg-2 col-sm-6"><code>Action 2</code></div>
                     <div class="col-lg-10 col-sm-6">
                       <h5 style="font-weight: 700;">Make your payment</h5>
-                      <p>Payments cannot be made in cash; they must be via credit card or bank transfer to the ICST UGM account below:</p>
-                      
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-lg-4 col-sm-6">
-                            <p><b>Payment via credit card (USD)</b></p>
-                          </div>
-                          <div class="col-lg-8 col-sm-6">
-                            <div class="card" style="border-color: transparent; height: 100%">
-                              <p>International presenter who submits their manuscript in the EDAS system. We do not recommend the local presenter to pay the conference fee via credit card because the EDAS payment currency is USD.</p>
-                            </div>
+                      <p>Payments cannot be made in cash; they must be via credit card or bank transfer to the ICST UGM account below:</p>                      
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                          <p><b>Payment via credit card (USD)</b></p>
+                        </div>
+                        <div class="col-lg-8 col-sm-6">
+                          <div class="card" style="border-color: transparent; height: 100%">
+                            <p>For international presenter who submits their manuscript in the EDAS system. We do not recommend the local presenter to pay the conference fee via credit card because the EDAS payment currency is USD.</p>
                           </div>
                         </div>
-                      </div>
-                      
-                      <hr style="width: 90%" class="my-3">
-                      
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-lg-4 col-sm-6">
-                            <p><b>Payment via bank transfer (USD)</b></p>
-                          </div>
-                          <div class="col-lg-8 col-sm-6">
-                            <div class="card" style="border-color: transparent; height: 100%">
-                              
-                              <p>International presenter can transfer the payment to:<br>
-                                <i>Account number</i>: 9888-9002-2411-1453<br>
-                                <i>Account name</i>: UGM ICST<br>
-                                <i>Bank name</i>: BNI 46<br>
-                                <i>Swift code</i>: BNINIDJA
-                              </p>
-                              <p>*) Please note that the bank's account number is different for the international and local presenter.</p>
-                            </div>
+                        
+                        <hr style="width: 90%" class="my-3">
+                        
+                        <div class="col-lg-4 col-sm-6">
+                          <p><b>Payment via bank transfer (USD)</b></p>
+                        </div>
+                        <div class="col-lg-8 col-sm-6">
+                          <div class="card" style="border-color: transparent; height: 100%">
+                            <p>For international presenter can transfer the payment to:<br>                          
+                              <i>Account name</i>: UGM ICST<br>
+                              <i>Account number</i>: 9888-9002-2411-1453<br>
+                              <i>Bank name</i>: BNI 46<br>
+                              <i>Swift code</i>: BNINIDJA
+                            </p>
+                            <p>*) Please note that the bank's account number is different for the international and local presenter.</p>
                           </div>
                         </div>
-                      </div>
-                      
-                      <hr style="width: 90%" class="my-3">
-                      
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-lg-4 col-sm-6">
-                            <p><b>Payment via bank transfer (IDR)</b></p>
-                          </div>
-                          <div class="col-lg-8 col-sm-6">
-                            <div class="card" style="border-color: transparent; height: 100%">
-                              
-                              <p>Local presenter can transfer the payment to:<br>
-                                <i>Account number</i>: 9888-8002-2411-1453<br>
-                                <i>Account name</i>: UGM ICST<br>
-                                <i>Bank name</i>: BNI 46
-                              </p>
-                              <p>*) Please note that the bank's account number is different for the international and local presenter.</p>
-                            </div>
+                        
+                        <hr style="width: 90%" class="my-3">
+                        
+                        <div class="col-lg-4 col-sm-6">
+                          <p><b>Payment via bank transfer (IDR)</b></p>
+                        </div>
+                        <div class="col-lg-8 col-sm-6">
+                          <div class="card" style="border-color: transparent; height: 100%">
+                            <p>For local presenter can transfer the payment to:<br>
+                              <i>Account name</i>: UGM ICST<br>
+                              <i>Account number</i>: 9888-8002-2411-1453<br>
+                              <i>Bank name</i>: BNI 46
+                            </p>
+                            <p>*) Please note that the bank's account number is different for the international and local presenter.</p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    
-                    <hr style="width: 90%" class="my-3">
-                    
+                  </div>
+                  
+                  <hr style="width: 90%" class="my-3">
+                  
+                  <div class="row">
                     <div class="col-lg-2 col-sm-6"><code>Action 3</code></div>
                     <div class="col-lg-10 col-sm-6">
                       <h5 style="font-weight: 700;">Confirm your payment</h5>
@@ -650,49 +607,49 @@
                           <li><i class="fa fa-exclamation-triangle fa-li" aria-hidden="true"></i>You need to prepare your payment receipt and paper ID for the payment confirmation.</li>
                         </ul>
                       </div>
-                      <p>Please make sure to confirm your payment by entry the confirmation form for presenter, otherwise you cannot submit your camera-ready document.<br>
-                        <a href="https://airtable.com/shracOLilXZQG9GIm" target="_blank" class="btn btn-primary">Confirm the payments</a></p>
-                        <p>You can find your paper ID as shown by this following image:</p>
-                        <img src="../images/tutorials/edas/edas-paperID.png" class="rounded mb-3 img-tutorial">
-                      </div>
-                      
-                      <hr style="width: 90%" class="my-3">
-                      
-                      <div class="col-lg-2 col-sm-6"><code>Action 4</code></div>
-                      <div class="col-lg-10 col-sm-6">
-                        <h5 style="font-weight: 700;">Wait for the next 2&ndash;3 business days for us to verify your payment</h5>
-                        <p>Please make sure not to miss the date. The deadline for the payment confirmation is on <b>July 27</b>, but you will get an early-bird discount if you pay before <b>July 7</b>.</p>
-                        <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
-                      </div>
+                      <p>Please make sure to confirm your payment by entry the confirmation form for presenter, otherwise you cannot submit your camera-ready document. Click the button below to confirm your payment.</p>
+                      <a href="https://airtable.com/shracOLilXZQG9GIm" target="_blank" class="btn btn-primary">Confirm the payments</a>
+                      <p>You can find your paper ID as shown by this following image:</p>
+                      <img src="../images/tutorials/edas/edas-paperID.png" class="rounded mb-3 img-tutorial">
                     </div>
-                    
                   </div>
-                </div>
+                  
+                  <hr style="width: 90%" class="my-3">
+                  
+                  <div class="row">
+                    <div class="col-lg-2 col-sm-6"><code>Action 4</code></div>
+                    <div class="col-lg-10 col-sm-6">
+                      <h5 style="font-weight: 700;">Wait for the next 2&ndash;3 business days for us to verify your payment</h5>
+                      <p>Please make sure not to miss the date. The deadline for the payment confirmation is on <b>July 27</b>, but you will get an early-bird discount if you pay before <b>July 15</b>.</p>
+                      <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
+                    </div>
+                  </div>
+                  
+              </div>
                 
               <!-- Submit camera-ready -->
               <div class="tab-pane fade py-5" id="pills-camera" role="tabpanel" aria-labelledby="pills-camera-tab">
-                <p class="alert alert-info text-center">Your paper will go to the blind review.<br>You can <a class="alert-link" href="http://edas.info" target="_blank">check the status of your paper <i class="fas fa-external-link-square-alt"></i></a> anytime from your account in EDAS.</p>
-                                                        
-                      <div class="col-lg-2 col-sm-6"><code>Action 4</code></div>
-                      <div class="col-lg-10 col-sm-6">
-                        <h5 style="font-weight: 700;">
-                          Submit the camera-ready document</h5>
-                          <p>After signed the copyright form, you need to go back to the EDAS dashboard page.</p>
-                          <p>Click your paper title and upload the document by clicking the cloud icon in <code>Final manuscript</code>.</p>
-                          <p><img src="../images/tutorials/edas/edas-upload-camera-ready.png" class="rounded mb-3 img-tutorial" style="width: 300px; margin: auto;">
-                          </p>
-                        </div>
-                        
-                        <hr style="width: 90%" class="my-3">
-                        
-                        <div class="col-lg-2 col-sm-6"><code>Action 5</code></div>
-                        <div class="col-lg-10 col-sm-6">
-                          <h5 style="font-weight: 700;">
-                            Select one presenter of your paper
-                          </h5>
-                          <p>By default, the author who was submitted a paper will be presenting at the conference. If the submitter of your paper is not indicate the presenter, please define it in EDAS paper page.</p>
-                          <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
-                        </div>
+                <p class="alert alert-info">This tutorial will guide you through submitting your camera-ready manuscript. Please make sure that your manuscript has been analyzed by the PDF eXpress™ Plus and the conference fee has been confirmed.</p>
+                <div class="row">
+                  <div class="col-lg-2 col-sm-6"><code>Action 1</code></div>
+                  <div class="col-lg-10 col-sm-6">
+                    <h5 style="font-weight: 700;">Submit the camera-ready document</h5>
+                    <p>In the EDAS dashboard page, click your paper title and upload the <code>PDF and DOC/DOCX/ZIP</code> documents by clicking the cloud icon in <code>Final manuscript</code>.</p>
+                    <p><img src="../images/tutorials/edas/edas-upload-camera-ready.png" class="rounded mb-3 img-tutorial" style="width: 300px; margin: auto;">
+                    </p>
+                  </div>
+                </div>
+                
+                <hr style="width: 90%" class="my-3">
+                  
+                <div class="row">
+                  <div class="col-lg-2 col-sm-6"><code>Action 2</code></div>
+                  <div class="col-lg-10 col-sm-6">
+                    <h5 style="font-weight: 700;">Select one presenter of your paper</h5>
+                    <p>By default, the author who was submitted a paper will be presenting at the conference. If the submitter of your paper is not indicate the presenter, please define it in EDAS paper page.</p>
+                    <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
+                  </div>
+                </div>
               </div>
                 
               <!-- Sign the copyright -->
