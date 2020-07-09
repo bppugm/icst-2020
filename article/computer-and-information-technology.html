@@ -123,6 +123,7 @@
                   Software engineering and software testing, and 
                   Web technology.
                 </p>
+                <button type="button" id="submitbtn" class="btn btn-primary">SUBMIT</button>
               </div>
               <div class="col-lg-4 col-md-6" style="border-left: solid 1px grey;">
                 <!-- committee -->
@@ -744,6 +745,16 @@
       
     </div>
   </footer>
-  
+  <script>
+    $('#submitbtn').on('click', function (e) {
+      e.preventDefault()
+      $('#nav-info').removeClass('active')
+      $('#nav-info').removeClass('show')
+      $('#nav-info-tab').removeClass('active')
+
+      $('#nav-submit-tab').addClass('active')
+      $('#nav-submit').tab('show')
+    })
+  </script>
 </body>
 </html>
