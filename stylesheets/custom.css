@@ -54,6 +54,13 @@ code {
   pointer-events: none;
 }
 
+/* INDICATOR */
+.indicator {
+  color: #fff;
+  background-color: #0078d4;
+  border-radius: 100px
+}
+
 /* BADGE */
 
 .badge-ico-done {
@@ -203,25 +210,6 @@ code {
   .dropdown-item {
     white-space: normal;
   }
-}
-
-/* SOCIAL MEDIA ROW */
-
-.social-media-row {
-  background-color: rgba(222, 221, 219, 0.7) !important;
-  border-top: 1px solid rgba(217, 216, 214, 0.7);
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.social-media-row a {
-  font-size: 1.5rem;
-  white-space: nowrap;
-  color: #292b2c;
-}
-
-.social-media-row a:hover {
-  color: #1d73cc;
 }
 
 /* LIST OF PRESENTERS */
