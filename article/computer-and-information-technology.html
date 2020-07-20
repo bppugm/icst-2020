@@ -208,15 +208,46 @@
           <div class="tab-pane fade" id="nav-submit" role="tabpanel" aria-labelledby="nav-submit-tab">
             <div class="accordion container py-5" id="submitdion">
               
-              <!-- Create an EDAS account -->
-              <div id="collapse1" class="collapse show" aria-labelledby="create-dion" data-parent="#submitdion">
-                <div class="py-5" style="height: 100vh;">
+              <!-- 0 Instruction -->
+              <div id="collapse0" class="collapse show" aria-labelledby="instruction-dion" data-parent="#submitdion">
+                <div class="py-5" style="height: 80vh;">
+                  <!-- paper submission -->
                   <div class="ml-auto mr-0 py-5">
-                    <code class="indicator">Quest 1</code>
+                    <code class="indicator-instruction">Instruction</code>
+                    <i title="Step 1: Create an EDAS account" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
                     <i title="Step 2: Submit your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
                     <i title="Step 3: Reviewing process" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
                     <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
                     <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <img src="../images/stock/hi.svg" style="height: 30vh;">
+                    </div>
+                    <div class="col-lg-6">
+                      <br>
+                      <h4>Hi, applicants!</h4>
+                      <p>To participate as a presenter in the ICST 2020, there are 7 steps that you need to follow.</p>
+                      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Start now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 1 Create an EDAS account -->
+              <div id="collapse1" class="collapse" aria-labelledby="create-dion" data-parent="#submitdion">
+                <div class="py-5" style="height: 100vh;">
+                  <div class="ml-auto mr-0 py-5">
+                    <code title="Instruction" class="indicator-instruction" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <code class="indicator-start">Step 1</code>
+                    <i title="Step 2: Submit your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i title="Step 3: Reviewing process" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
                   <span class="badge badge-ico-process p-3"><i class="fas fa-user-plus fa-2x"></i></span>
                   <h4 class="pt-2">Create an EDAS account</h4>
@@ -241,7 +272,7 @@
                 <hr style="width: 75%;">
                 
                 <h5>3. Activate your new EDAS account</h5>
-                <p>Type your new EDAS account details in <a title="Activate my new EDAS account" class="text-primary" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">the activation request form <i class="fas fa-external-link-square-alt"></i></a>. If you still didn't get the email from the EDAS system, feel free to <a href="mailto:icst@ugm.ac.id">contact us</a> or <a href="mailto:help@edas.info">EDAS Helpdesk</a>. Please note that we use a third-party software, so you cannot request in the end of time.</p>
+                <p>Type your new EDAS account details in the <a title="Activate my new EDAS account" class="text-primary" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">activation request form <i class="fas fa-external-link-square-alt"></i></a>. If you still didn't get the email from the EDAS system, feel free to <a href="mailto:icst@ugm.ac.id">contact us</a> or <a href="mailto:help@edas.info">EDAS Helpdesk</a>. Please note that we use a third-party software, so you cannot request in the end of time.</p>
                 
                 <hr style="width: 75%;">
                 
@@ -250,46 +281,35 @@
                 <img src="../images/tutorials/edas/edas-create-new-account-4.png" class="rounded mb-3 img-tutorial">
                 <p>Your initial password has been created.</p>
                 
-                <!-- next quest -->
+                <!-- next step -->
                 <div class="card p-5">
                   <div class="row">
-                    <div class="col-sm-6 col-md-8"><h4>Your account has been created!</h4><p>Now, you can go to the next quest to submit your manuscript in the system.</p></div>
-                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 2: Submit your manuscript" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Go to the next quest&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
+                    <div class="col-sm-6 col-md-8"><h4>Your account has been created!</h4><p>Now, you can go to the next step to submit your manuscript in the system.</p></div>
+                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 2: Submit your manuscript" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Go to the next step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
                   </div>
                 </div>
                 
               </div>
               
-              <!-- Activate your new EDAS account -->
-              <div id="collapse0" class="collapse" aria-labelledby="active-dion" data-parent="#submitdion">
-                <div class="text-center">
-                  <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
-                  <code class="indicator">Step 2</code>
-                  <i title="Step 3: Reviewing process" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
-                  <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
-                </div>
-                <div class="container py-5 centered">
-                  <iframe class="d-none d-md-block" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="750" height="890" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                  <iframe class="d-block d-sm-none" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="330" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                </div>
-              </div>
-              
-              <!-- Submit your manuscript -->
+              <!-- 2 Submit your manuscript -->
               <div id="collapse2" class="collapse" aria-labelledby="submit-dion" data-parent="#submitdion">
                 <div class="py-5" style="height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
+                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
                     <code class="indicator">Step 2</code>
                     <i title="Step 3: Reviewing process" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
                     <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
                     <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
                   <span class="badge badge-ico-process p-3"><i class="fas fa-file-import fa-2x"></i></span>
                   <h4 class="pt-2">Submit your manuscript</h4>
                   <p>After creating an EDAS account, you can submit your manuscript in the system. In order to maximize our services, you need to complete the following details before submitting your manuscript:
                     <ul>
                       <li>The registered EDAS account of all authors in your manuscript.</li>
-                      <li>Manuscript format and content in accordance with <a id="nav-guide-tab" data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide">the author guidelines</a>.</li>
+                      <li>Manuscript format and content in accordance with the <a id="nav-guide-tab" data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide">author guidelines</a>.</li>
                     </ul>
                   </p>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
@@ -336,70 +356,96 @@
                 <img src="../images/tutorials/edas/edas-upload-document-3.png" class="rounded mb-3 img-tutorial">
                 <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
                 
-                <!-- next quest -->
+                <!-- next step -->
                 <div class="card p-5">
                   <div class="row">
                     <div class="col-sm-6 col-md-8"><h4>Your manuscript has been uploaded!</h4><p>Your manuscript is under review process and we will notify you again soon.</p></div>
-                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 3: Reviewing process" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">Go to the next quest&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
+                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 3: Reviewing process" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">Go to the next step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
                   </div>
                 </div>
                 
               </div>
               
-              <!-- Review -->
+              <!-- 3 Review -->
               <div id="collapse3" class="collapse" aria-labelledby="review-dion" data-parent="#submitdion">
-                <div class="py-5" style="height: 100vh;">
+                <div class="py-5" style="height: 80vh;">
                   <div class="ml-auto mr-0 py-5">
+                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
                     <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
-                    <code class="indicator">Quest 3</code>
+                    <code class="indicator">Step 3</code>
                     <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
                     <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
-                  <span class="badge badge-ico-process p-3"><i class="fas fa-diagnoses fa-2x"></i></span>
-                  <h4 class="pt-2">Reviewing process</h4>
-                  <p>Your paper will go to the blind review. You can <a href="http://edas.info" target="_blank">check the status of your paper <i class="fas fa-external-link-square-alt"></i></a> anytime from your account in EDAS.</p>
-                </div>
-                
-                <!-- next quest -->
-                <div class="card p-5">
+                  <!-- <span class="badge badge-ico-process p-3"><i class="fas fa-diagnoses fa-2x"></i></span> -->
+                  <!-- <div class="row">
+                    <div class="col-lg-6">
+                      <img src="../images/stock/review.svg" style="height: 30vh;">
+                    </div>
+                    <div class="col-lg-6">
+                      <br class="d-none d-lg-block pt-5">
+                      <br class="d-none d-lg-block pt-5">
+                      <br class="d-none d-lg-block pt-5">
+                      <br>
+                      <h4>Your manuscript will go to the blind review.</h4>
+                      <p>You can check the status of your manuscript anytime from your account in the EDAS. We will notify you too via email when the review process was finished.</p>
+                      <button class="btn btn-primary" type="button" href="http://edas.info" target="_blank">Check my manuscript</button>
+                    </div>
+                  </div> -->
+                  
+                  <!-- accepted -->
                   <div class="row">
-                    <div class="col-sm-6 col-md-8"><h4>Congratulation!</h4><p>You can go the the next quest if your manuscript has been accepted to be delivered in the conference.</p></div>
-                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 4: Pay the conference fees" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">Go to the next quest&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
+                    <div class="col-lg-6">
+                      <img src="../images/stock/accepted.svg" style="height: 30vh;">
+                    </div>
+                    <div class="col-lg-6">
+                      <br class="d-none d-lg-block pt-5">
+                      <br class="d-none d-lg-block pt-5">
+                      <br class="d-none d-lg-block pt-5">
+                      <br>
+                      <h4>Congratulation!</h4>
+                      <p>You can go the the next step if your manuscript has been accepted to be delivered in the conference.</p>
+                      <a class="btn btn-info" type="button" href="http://edas.info" target="_blank">Check my manuscript</a>&nbsp;<button class="btn btn-primary" title="Step 4: Pay the conference fees" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">Go to the next step</button>
+                    </div>
                   </div>
+                                   
                 </div>
-                
               </div>
               
-              <!-- Pay the fees -->
+              <!-- 4 Pay the fees -->
               <div id="collapse4" class="collapse" aria-labelledby="pay-dion" data-parent="#submitdion">
                 <div class="py-5" style="height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
+                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
                     <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
                     <i title="Step 3: Reviewing process" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
-                    <code class="indicator">Quest 4</code>
+                    <code class="indicator">Step 4</code>
                     <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
                   <span class="badge badge-ico-process p-3"><i class="fas fa-credit-card fa-2x"></i></span>
                   <h4 class="pt-2">Pay the conference fees</h4>
-                  <p>If your manuscript has been accepted to be delivered in the conference, you need to pay the conference fees before uploading the camera-ready paper. FYI, One paper can only be delivered by one presenter. However, one presenter can deliver more than one paper.</p>
+                  <p>If your manuscript has been accepted to be delivered in the conference, you need to pay the conference fees before uploading the camera-ready manuscript. FYI, One manuscript can only be delivered by one presenter. However, one presenter can deliver more than one manuscript.</p>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
                 </div>
                 
                 <hr>
                 
                 <h5>1. Find out how much you have to pay</h5>
-                <p>Read the <a href="fees.html" class="alert-link">conference fees <i class="fas fa-external-link-square-alt"></i></a> to know how much do you need to pay.</p>
+                <p>Read the <a href="fees.html">conference fees <i class="fas fa-external-link-square-alt"></i></a> to know how much do you need to pay.</p>
                 
                 <hr style="width: 75%">
                 
                 <h5>2. Make your payment</h5>
                 <p>Payments cannot be made in cash; they must be via credit card or bank transfer to the ICST UGM account below:</p>                      
                 <p class="pl-5"><b>Payment via credit card (USD)</b><br>For international presenter who submits their manuscript in the EDAS system. We do not recommend the local presenter to pay the conference fee via credit card because the EDAS payment currency is USD.</p>
-
+                
                 <hr style="width: 50%;">
-                  
+                
                 <p class="pl-5"><b>Payment via bank transfer (USD)</b><br>
                   For international presenter can transfer the payment to:<br>
                   <i>Account name</i>: UGM ICST<br>
@@ -408,7 +454,7 @@
                   <i>Swift code</i>: BNINIDJA<br>
                   *) Please note that the bank's account number is different for the international and local presenter.
                 </p>
-                  
+                
                 <hr style="width: 50%;">
                 
                 <p class="pl-5"><b>Payment via bank transfer (IDR)</b><br>
@@ -430,38 +476,163 @@
                 <h5>4. Wait for the next 2&ndash;3 business days for us to verify your payment</h5>
                 <p>Please make sure not to miss the date. The deadline for the payment confirmation is on <b>July 27</b>, but you will get an early-bird discount if you pay before <b>July 15</b>.</p>
                 
-                <!-- next quest -->
+                <!-- next step -->
                 <div class="card p-5">
                   <div class="row">
-                    <div class="col-sm-6 col-md-8"><h4>The 4th quest has been cleared!</h4><p>You can prepare your camera-ready manuscript while waiting the verification of your payment.</p></div>
-                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 5: Check your manuscript" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">Go to the next quest&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
+                    <div class="col-sm-6 col-md-8"><h4>The 4th step has been cleared!</h4><p>You can prepare your camera-ready manuscript while waiting the verification of your payment.</p></div>
+                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 5: Check your manuscript" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">Go to the next step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
                   </div>
                 </div>
-
+                
               </div>
               
-              <!-- Check your manuscript -->
+              <!-- 5 Check your manuscript -->
               <div id="collapse5" class="collapse" aria-labelledby="check-dion" data-parent="#submitdion">
                 <div class="py-5" style="height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
+                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
                     <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
                     <i title="Step 3: Reviewing process" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
                     <i title="Step 4: Pay the conference fees" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
-                    <code class="indicator">Quest 5</code>
+                    <code class="indicator">Step 5</code>
+                    <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
                   <span class="badge badge-ico-process p-3"><i class="fas fa-user-plus fa-2x"></i></span>
-                  <h4 class="pt-2">Create an EDAS account</h4>
-                  <p>Before submitting your manuscript, the authors need to have an EDAS account. If you already have an EDAS account, you can <span class="text-primary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"> go to the next step <i class="fas fa-forward"></i></span> to submit your manuscript using your registered account.</p>
+                  <h4 class="pt-2">Check your manuscript</h4>
+                  <p>After you got the notification of acceptance, you need to re-check your camera-ready manuscript's format and content.</p>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
                 </div>
                 
                 <hr>
-              </div>  
+                
+                <h5>1. Check your paper format and content</h5>
+                <p>The submitted camera-ready paper should be written according to the author guidelines.</p>
+                <div class="alert alert-danger">
+                  <p>The corresponding author have to check the title, list of authors, and their affiliations in the EDAS system and their paper. Any revision could not be made after uploading the camera-ready version by <b>August 10</b>.</p>
+                </div>
+                
+                <hr style="width: 75%">
+                
+                <h5>2. Analyze your camera-ready document</h5>
+                <p>The submitted <code>PDF</code> document must have passed the <a href="https://www.pdf-express.org/" target="_blank">PDF eXpress™ Plus <i class="fas fa-external-link-square-alt"></i></a>. PDF eXpress™ Plus is used to ensure the document are match with IEEE Xplore® compliance. The service is free of charge for ICST 2020 authors using <code>Conference ID: 50505XP</code>. Read <a target="_blank" href="https://www.pdf-express.org/frhelpnologin.asp">how to use IEEE PDF eXpress™ <i class="fas fa-external-link-square-alt"></i></a>. For a new user, you need to create <a href="https://www.pdf-express.org/contributor.asp" target="_blank">a new PDF eXpress™ account <i class="fas fa-external-link-square-alt"></i></a>. We highly recommend that you keep a backup of your <code>DOC</code> camera-ready document on your computer or another file storage.</p>
+                
+                <!-- next step -->
+                <div class="card p-5">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-8"><h4>The manuscript is ready to upload!</h4><p>Now, you can upload your camera-ready manuscript in the system.</p></div>
+                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 6: Submit camera-ready" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">Go to the next step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
+                  </div>
+                </div>
+                
+              </div>
               
-              <!-- Submit camera-ready -->
+              <!-- 6 Sign the copyright -->
+              <div id="collapse6" class="collapse" aria-labelledby="sign-dion" data-parent="#submitdion">
+                <div class="py-5" style="height: 100vh;">
+                  <div class="ml-auto mr-0 py-5">
+                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                    <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i title="Step 3: Reviewing process" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i title="Step 4: Pay the conference fees" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i title="Step 5: Check your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <code class="indicator">Step 6</code>
+                    <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
+                  </div>
+                  <span class="badge badge-ico-process p-3"><i class="fas fa-copyright fa-2x"></i></span>
+                  <h4 class="pt-2">Sign the copyright</h4>
+                  <p>Before submitting your camera-ready manuscript, you need to sign the electronic copyright.</p>
+                  <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
+                </div>
+                
+                <hr>
+                
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                  <ul class="fa-ul" style="margin-bottom: 0rem;">
+                    <li><i class="fa fa-exclamation-triangle fa-li" aria-hidden="true"></i>The camera-ready submission can be done after <a href="tutorial-edas-payment-confirmation.html" class="alert-link">your payment has been verified</a>.</li>
+                    <li>Read the <a href="fees.html" class="alert-link">conference fees</a> to know how much do you need to pay.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-10 col-sm-6">
+                  <h5 style="font-weight: 700;">Sign the e-copyright form</h5>
+                  <p><a target="_blank" href="http://edas.info/N25894">Log in <i class="fa fa-external-link"></i></a> to the ICST UGM 2019 EDAS site.</p>
+                  <img src="../images/tutorials/edas-login.png" class="rounded mb-3 img-tutorial">
+                  <p>Click the <code>copyright icon</code> of your accepted paper on the EDAS dashboard page.</p>
+                  <img src="../images/tutorials/edas/edas-sign-electronic-copyright.png" class="rounded mb-3 img-tutorial">
+                  <p>Sign the e-copyright. Please note that author (except from Environmental and Earth Science symposium) must have signed the copyright form. Otherwise, EDAS will not allow you to upload the camera-ready document.</p>
+                </div>
+                
+                <!-- next step -->
+                <div class="card p-5">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-8"><h4>The manuscript is ready to upload!</h4><p>Now, you can upload your camera-ready manuscript in the system.</p></div>
+                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 6: Submit camera-ready" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">Go to the next step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
+                  </div>
+                </div>
+                
+              </div>
               
-              <!-- Sign the copyright -->
+              <!-- 7 Submit camera-ready -->
+              <div id="collapse7" class="collapse" aria-labelledby="check-dion" data-parent="#submitdion">
+                <div class="py-5" style="height: 100vh;">
+                  <div class="ml-auto mr-0 py-5">
+                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                    <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i title="Step 3: Reviewing process" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i title="Step 4: Pay the conference fees" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i title="Step 5: Check your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i title="Step 6: Sign the copyright" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <code class="indicator" style="border-radius: 1rem 0.5rem 0.5rem 1rem;">Last step</code>
+                  </div>
+                  <span class="badge badge-ico-process p-3"><i class="fas fa-user-plus fa-2x"></i></span>
+                  <h4 class="pt-2">Submit camera-ready</h4>
+                  <p>This tutorial will guide you through submitting your camera-ready manuscript. Please make sure that your manuscript has been analyzed by the PDF eXpress™ Plus and the conference fee has been confirmed.</p>
+                  <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
+                </div>
+                
+                <hr>
+                
+                <div class="row">
+                  <div class="col-lg-2 col-sm-6"><code>Action 1</code></div>
+                  <div class="col-lg-10 col-sm-6">
+                    <h5 style="font-weight: 700;">Submit the camera-ready document</h5>
+                    <p>In the EDAS dashboard page, click your paper title and upload the <code>PDF and DOC/DOCX/ZIP</code> documents by clicking the cloud icon in <code>Final manuscript</code>.</p>
+                    <p><img src="../images/tutorials/edas/edas-upload-camera-ready.png" class="rounded mb-3 img-tutorial" style="width: 300px; margin: auto;">
+                    </p>
+                  </div>
+                </div>
+                
+                <hr style="width: 90%" class="my-3">
+                
+                <div class="row">
+                  <div class="col-lg-2 col-sm-6"><code>Action 2</code></div>
+                  <div class="col-lg-10 col-sm-6">
+                    <h5 style="font-weight: 700;">Select one presenter of your paper</h5>
+                    <p>By default, the author who was submitted a paper will be presenting at the conference. If the submitter of your paper is not indicate the presenter, please define it in EDAS paper page.</p>
+                    <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
+                  </div>
+                </div>
+                
+              </div>
+              
+              <!-- Activate your new EDAS account -->
+              <div id="collapseActivate" class="collapse" aria-labelledby="active-dion" data-parent="#submitdion">
+                <div class="text-center">
+                  <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                  <code class="indicator">Step 2</code>
+                  <i title="Step 3: Reviewing process" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                  <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                  <i title="Step 6: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                </div>
+                <div class="container py-5 centered">
+                  <iframe class="d-none d-md-block" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="750" height="890" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                  <iframe class="d-block d-sm-none" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="330" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+              </div>
               
             </div>
           </div>

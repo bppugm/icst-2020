@@ -58,7 +58,26 @@ code {
 .indicator {
   color: #fff;
   background-color: #0078d4;
-  border-radius: 100px
+  border-radius: 1rem;
+}
+
+.indicator-instruction {
+  color: #fff;
+  background-color: #17a2b8;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.indicator-start {
+  color: #fff;
+  background-color: #0078d4;
+  border-radius: 0.5rem 1rem 1rem 0.5rem;
+}
+
+.indicator-end {
+  color: #fff;
+  background-color: #0078d4;
+  border-radius: 1rem 0.5rem 0.5rem 1rem;
 }
 
 /* BADGE */
