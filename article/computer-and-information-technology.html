@@ -66,7 +66,7 @@
       
       <sidebar class="col-lg-3 col-sm-6 bg-pattern-icst">
         <div class="container py-5">
-          <a href="symposia.html"><small><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;All Symposia</small></a>
+          <a href="symposia.html" class="d-none d-lg-block"><small><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;All Symposia</small></a>
           <h3 class="py-3">Computer and Information Technology Symposium</h3>
           <!-- Symposium navigations -->
           <nav class="nav flex-column nav-pills d-none d-lg-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -75,8 +75,8 @@
             <a class="nav-item nav-link" id="nav-present-tab" data-toggle="tab" href="#nav-present" role="tab" aria-controls="nav-present" aria-selected="false"><i class="fas fa-users"></i>&nbsp;&nbsp;Presentation</a>
             <a class="btn btn-primary nav-link text-white py-3" id="nav-submit-tab" data-toggle="tab" href="#nav-submit" role="tab" aria-controls="nav-submit" aria-selected="false"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Submit manuscript here</a>
           </nav>
-          <hr>
-          <p class="card-text small">
+          <hr class="d-none d-lg-block">
+          <p class="card-text small d-none d-lg-block">
             <!-- contact -->
             <i class="fas fa-user-cog"></i>&nbsp;<b>Contact person</b><br>
             Wahyono, Ph.D.<br>
@@ -84,11 +84,19 @@
           </p>
         </div>
       </sidebar>
-      <nav class="navbar nav nav-tabs bg-pattern-icst fixed-bottom d-md-none">
-        <a class="nav-item nav-link text-center active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true"><i class="fa fa-info-circle fa-2x"></i><br>About</a>
-        <a class="nav-item nav-link text-center" id="nav-guide-tab" data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide" aria-selected="false"><i class="fas fa-pen-square fa-2x"></i><br>Guide</a>
-        <a class="nav-item nav-link text-center" id="nav-present-tab" data-toggle="tab" href="#nav-present" role="tab" aria-controls="nav-present" aria-selected="false"><i class="fas fa-users fa-2x"></i><br>Present</a>
-        <a class="nav-item nav-link text-center" id="nav-submit-tab" data-toggle="tab" href="#nav-submit" role="tab" aria-controls="nav-submit" aria-selected="false"><i class="fas fa-paper-plane fa-2x"></i><br>Submit</a>
+      
+      <nav class="navbar flex-column bg-pattern-icst fixed-bottom d-md-none">
+        <div class="nav">
+          <button class="btn btn-toolbar" style="padding: 0.5rem 40vw 0.5rem 40vw;" data-toggle="collapse" data-target="#symposium-nav" aria-controls="symposium-nav" aria-expanded="false"><i class="fas fa-chevron-up"></i></button>
+        </div>
+        <div class="nav nav-pills collapse" id="symposium-nav">
+          <a class="nav-item nav-link text-center" href="symposia.html"><i class="fas fa-arrow-left"></i><br>Symposia</a>
+          <a class="nav-item nav-link text-center active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true"><i class="fas fa-info-circle"></i><br>About</a>
+          <a class="nav-item nav-link text-center" href="mailto:wahyo@ugm.ac.id"><i class="fa fa-envelope"></i><br>Contact</a>
+          <a class="nav-item nav-link text-center" id="nav-guide-tab" data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide" aria-selected="false"><i class="fas fa-pen-square"></i><br>Guide</a>
+          <a class="nav-item nav-link text-center" id="nav-present-tab" data-toggle="tab" href="#nav-present" role="tab" aria-controls="nav-present" aria-selected="false"><i class="fas fa-users"></i><br>Present</a>
+          <a class="nav-item nav-link text-center" id="nav-submit-tab" data-toggle="tab" href="#nav-submit" role="tab" aria-controls="nav-submit" aria-selected="false"><i class="fas fa-paper-plane"></i><br>Submit</a>
+        </div>
       </nav>
       
       <blog class="col-lg-9 col-sm-6">
@@ -96,8 +104,8 @@
           
           <!-- About Symposium -->
           <div class="tab-pane fade show active" id="nav-info" role="tabpanel" aria-labelledby="nav-info-tab">
-            <div class="container py-5">
-              <div class="row" style="padding-top: 40px;">
+            <div class="container py-5" style="min-height: 95vh;">
+              <div class="row">
                 <!-- topics -->
                 <div class="col-lg-8 col-md-6">
                   <h4 id="#topics">Topics</h4>
@@ -146,11 +154,11 @@
           
           <!-- Author Guidelines -->
           <div class="tab-pane fade" id="nav-guide" role="tabpanel" aria-labelledby="nav-guide-tab">
-            <div class="container py-5">
+            <div class="container py-5" style="min-height: 80vh;">
               <h4 id="paper-guide">Preparing your manuscript</h4>
               <p>
                 <ol style="padding-left: 15px;">
-                  <li>The manuscript topic should conform to the scope of the conference/symposium and publisher. <a href="computer-and-information-technology.html"><small><i class="fa fa-undo"></i>&nbsp;Read the topics</small></a></li>
+                  <li>The manuscript topic should conform to the scope of the conference/symposium and publisher. <a data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true"><small><i class="fa fa-undo"></i>&nbsp;Read the topics</small></a></li>
                   <li>The submitted manuscript must be original work and should not have been previously published or presented at another meeting. </li>
                   <li>The manuscript should be written in English (US), with font type Times New Roman.</li>
                   <li>The abstract should be no more than 200 words (excluding abstract title, authors, and affiliations), with A4 Paper size in <code>PDF</code> or <code>DOC</code> format, and written at least four pages long or six pages in maximum.</li>
@@ -209,28 +217,35 @@
             <div class="accordion container py-5" id="submitdion">
               
               <!-- 0 Instruction -->
-              <div id="collapse0" class="collapse show" aria-labelledby="instruction-dion" data-parent="#submitdion">
+              <div id="collapse0" class="collapse" aria-labelledby="instruction-dion" data-parent="#submitdion">
                 <div class="py-5" style="height: 80vh;">
                   <!-- paper submission -->
                   <div class="ml-auto mr-0 py-5">
                     <code class="indicator-instruction">Instruction</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 1: Create an EDAS account" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 2: Submit your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 3: Reviewing process" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
                   <div class="row">
                     <div class="col-lg-6">
-                      <img src="../images/stock/hi.svg" style="height: 30vh;">
+                      <img src="../images/stock/hi.svg" class="img-fluid">
                     </div>
                     <div class="col-lg-6">
                       <br>
                       <h4>Hi, applicants!</h4>
-                      <p>To participate as a presenter in the ICST 2020, there are 7 steps that you need to follow.</p>
-                      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Start now</button>
+                      <p>To participate as a presenter in the ICST 2020, there are seven steps that you need to follow.</p>
+                      <button class="btn btn-primary" type="button" data-toggle="collapse1" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Start now</button>
                     </div>
                   </div>
                 </div>
@@ -241,17 +256,26 @@
                 <div class="py-5" style="height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
                     <code title="Instruction" class="indicator-instruction" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <code class="indicator-start">Step 1</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 2: Submit your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 3: Reviewing process" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
                   <span class="badge badge-ico-process p-3"><i class="fas fa-user-plus fa-2x"></i></span>
                   <h4 class="pt-2">Create an EDAS account</h4>
                   <p>Before submitting your manuscript, the authors need to have an EDAS account. If you already have an EDAS account, you can <span class="text-primary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"> go to the next step <i class="fas fa-forward"></i></span> to submit your manuscript using your registered account.</p>
+                  <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">I have an EDAS account</button><br class="d-sm-block d-lg-none">&nbsp;<a class="btn btn-primary" href="https://edas.info/?c=26926" target="_blank">Create new account</a>
+                  <br><br>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
                 </div>
                 
@@ -272,7 +296,29 @@
                 <hr style="width: 75%;">
                 
                 <h5>3. Activate your new EDAS account</h5>
-                <p>Type your new EDAS account details in the <a title="Activate my new EDAS account" class="text-primary" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">activation request form <i class="fas fa-external-link-square-alt"></i></a>. If you still didn't get the email from the EDAS system, feel free to <a href="mailto:icst@ugm.ac.id">contact us</a> or <a href="mailto:help@edas.info">EDAS Helpdesk</a>. Please note that we use a third-party software, so you cannot request in the end of time.</p>
+                <p>Type your new EDAS account details in the <a title="Activate my new EDAS account" class="text-primary" data-toggle="modal" data-target="#accountactivationModal" style="cursor: pointer;">activation request form <i class="fas fa-external-link-square-alt"></i></a>. If you still didn't get the email from the EDAS system, feel free to <a href="mailto:icst@ugm.ac.id">contact us</a> or <a href="mailto:help@edas.info">EDAS Helpdesk</a>. Please note that we use a third-party software, so you cannot request in the end of time.</p>
+                <button title="Activate my new EDAS account" class="btn btn-primary" type="button" data-toggle="modal" data-target="#accountactivationModal">Request activation</button>
+                
+                <!-- account activation modal -->
+                <div class="modal fade" id="accountactivationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="accountactivationModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="accountactivationModalLabel">Account activation request form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe class="d-none d-md-block" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="465" height="890" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        <iframe class="d-block d-sm-none" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="330" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Finish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 
                 <hr style="width: 75%;">
                 
@@ -295,23 +341,30 @@
               <div id="collapse2" class="collapse" aria-labelledby="submit-dion" data-parent="#submitdion">
                 <div class="py-5" style="height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
-                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <code title="Instruction" class="indicator-instruction" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <code class="indicator">Step 2</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 3: Reviewing process" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
                   <span class="badge badge-ico-process p-3"><i class="fas fa-file-import fa-2x"></i></span>
                   <h4 class="pt-2">Submit your manuscript</h4>
                   <p>After creating an EDAS account, you can submit your manuscript in the system. In order to maximize our services, you need to complete the following details before submitting your manuscript:
-                    <ul>
-                      <li>The registered EDAS account of all authors in your manuscript.</li>
-                      <li>Manuscript format and content in accordance with the <a id="nav-guide-tab" data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide">author guidelines</a>.</li>
-                    </ul>
+                    <li class="far fa-check-square text-primary"></li> The registered EDAS account of all authors in your manuscript.<br>
+                    <li class="far fa-check-square text-primary"></li> Manuscript format and content in accordance with the <a data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide">author guidelines</a>.
                   </p>
+                  <a class="btn btn-outline-info" type="button" data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide">Re-read the author guidelines</a>&nbsp;<a class="btn btn-primary" href="https://edas.info/newPaper.php?c=26926&track=99843" target="_blank">Submit my manuscript</a>
+                  <br><br>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
                 </div>
                 
@@ -367,50 +420,51 @@
               </div>
               
               <!-- 3 Review -->
-              <div id="collapse3" class="collapse" aria-labelledby="review-dion" data-parent="#submitdion">
-                <div class="py-5" style="height: 80vh;">
+              <div id="collapse3" class="collapse show" aria-labelledby="review-dion" data-parent="#submitdion">
+                <div class="py-5" style="min-height: 80vh;">
                   <div class="ml-auto mr-0 py-5">
-                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <code title="Instruction" class="indicator-instruction" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <code class="indicator">Step 3</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
-                  <!-- <span class="badge badge-ico-process p-3"><i class="fas fa-diagnoses fa-2x"></i></span> -->
-                  <!-- <div class="row">
-                    <div class="col-lg-6">
-                      <img src="../images/stock/review.svg" style="height: 30vh;">
+                  <div class="row">
+                    <div class="col-lg-6 text-center">
+                      <img src="../images/stock/review.svg" class="d-sm-block d-lg-none img-fluid">
+                      <img src="../images/stock/review.svg" class="d-none d-md-block" style="max-width: 25vw;">
                     </div>
                     <div class="col-lg-6">
-                      <br class="d-none d-lg-block pt-5">
-                      <br class="d-none d-lg-block pt-5">
-                      <br class="d-none d-lg-block pt-5">
                       <br>
-                      <h4>Your manuscript will go to the blind review.</h4>
-                      <p>You can check the status of your manuscript anytime from your account in the EDAS. We will notify you too via email when the review process was finished.</p>
+                      <h4>Reviewing your manuscript</h4>
+                      <p>Your manuscript will go to the blind review. You can check the status of your manuscript anytime from your account in the EDAS. We will notify you too via email when the review process was finished.</p>
                       <button class="btn btn-primary" type="button" href="http://edas.info" target="_blank">Check my manuscript</button>
+                    </div>
+                  </div>
+                  
+                  <!-- accepted -->
+                  <!-- <div class="row">
+                    <div class="col-lg-6">
+                      <img src="../images/stock/accepted.svg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6">
+                      <br>
+                      <h4>Congratulation!</h4>
+                      <p>You can go the the next step if your manuscript has been accepted to presents in the conference.</p>
+                      <a class="btn btn-outline-info" type="button" href="http://edas.info" target="_blank">Check my manuscript</a>&nbsp;<button class="btn btn-primary" title="Step 4: Pay the conference fees" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">Go to the next step</button>
                     </div>
                   </div> -->
                   
-                  <!-- accepted -->
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <img src="../images/stock/accepted.svg" style="height: 30vh;">
-                    </div>
-                    <div class="col-lg-6">
-                      <br class="d-none d-lg-block pt-5">
-                      <br class="d-none d-lg-block pt-5">
-                      <br class="d-none d-lg-block pt-5">
-                      <br>
-                      <h4>Congratulation!</h4>
-                      <p>You can go the the next step if your manuscript has been accepted to be delivered in the conference.</p>
-                      <a class="btn btn-info" type="button" href="http://edas.info" target="_blank">Check my manuscript</a>&nbsp;<button class="btn btn-primary" title="Step 4: Pay the conference fees" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">Go to the next step</button>
-                    </div>
-                  </div>
-                                   
                 </div>
               </div>
               
@@ -418,19 +472,50 @@
               <div id="collapse4" class="collapse" aria-labelledby="pay-dion" data-parent="#submitdion">
                 <div class="py-5" style="height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
-                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <code title="Instruction" class="indicator-instruction" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 3: Reviewing process" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <code class="indicator">Step 4</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 5: Check your manuscript" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
                   <span class="badge badge-ico-process p-3"><i class="fas fa-credit-card fa-2x"></i></span>
                   <h4 class="pt-2">Pay the conference fees</h4>
-                  <p>If your manuscript has been accepted to be delivered in the conference, you need to pay the conference fees before uploading the camera-ready manuscript. FYI, One manuscript can only be delivered by one presenter. However, one presenter can deliver more than one manuscript.</p>
+                  <p>If your manuscript has been accepted to be presented at the conference, you need to pay the conference fees before uploading the camera-ready manuscript. FYI, one manuscript can only be delivered by one presenter. However, one presenter can deliver more than one manuscript.</p>
+                  <a class="btn btn-outline-info" type="button" href="fees.html">Find out my bill</a>&nbsp;<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#paymentconfirmationModal">Confirm my payment</button>
+                  <br><br>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
+                </div>
+                
+                <!-- payment confirmation modal -->
+                <div class="modal fade" id="paymentconfirmationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="paymentconfirmationModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="paymentconfirmationModalLabel">Payment confirmation form</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                        <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shracOLilXZQG9GIm?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="2722" style="background: transparent; border: 1px solid #ccc;"></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Read the tutorial</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Finish</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 
                 <hr>
@@ -468,7 +553,14 @@
                 <hr style="width: 75%">
                 
                 <h5>3. Confirm your payment</h5>
-                <p>Before confirming your payment in the <a href="https://airtable.com/shracOLilXZQG9GIm" target="_blank">confirmation form <i class="fas fa-external-link-square-alt"></i></a>, you need to prepare your payment receipt and paper ID. You can find your paper ID as shown by this following image:</p>
+                <p>Before confirming your payment in the <a class="text-primary" style="cursor: pointer;" data-toggle="modal" data-target="#paymentconfirmationModal">confirmation form <i class="fas fa-external-link-square-alt"></i></a>, you need to prepare these following items:
+                  <li class="far fa-check-square text-primary"></li> The scanned or screenshot of your payment proof in <code>JPG / JPEG / PDF</code> format.<br>
+                  <li class="far fa-check-square text-primary"></li> Your paper ID(s).<br>
+                  <li class="far fa-check-square text-primary"></li> The presenter name.
+                </p>
+                <a class="btn btn-outline-info" type="button" href="https://edas.info" target="_blank">Check my paper ID</a>&nbsp;<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#paymentconfirmationModal">Confirm my payment</button>
+                <br><br>
+                <p>You can find your paper ID in the EDAS as shown by this following image:</p>
                 <img src="../images/tutorials/edas/edas-paperID.png" class="rounded mb-3 img-tutorial">
                 
                 <hr style="width: 75%">
@@ -490,18 +582,27 @@
               <div id="collapse5" class="collapse" aria-labelledby="check-dion" data-parent="#submitdion">
                 <div class="py-5" style="height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
-                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <code title="Instruction" class="indicator-instruction" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 3: Reviewing process" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 4: Pay the conference fees" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <code class="indicator">Step 5</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 6: Sign the copyright" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
-                  <span class="badge badge-ico-process p-3"><i class="fas fa-user-plus fa-2x"></i></span>
+                  <span class="badge badge-ico-process p-3"><i class="fas fa-tasks fa-2x"></i></span>
                   <h4 class="pt-2">Check your manuscript</h4>
-                  <p>After you got the notification of acceptance, you need to re-check your camera-ready manuscript's format and content.</p>
+                  <p>After you got the notification of acceptance, you need to finalize your camera-ready manuscript in accordance with the <a href="#nav-guide" role="tab" data-toggle="tab" aria-controls="nav-guide">author guidelines <i class="fas fa-external-link-square-alt"></i></a> and <a href="https://edas.info" target="_blank">review results <i class="fas fa-external-link-square-alt"></i></a>. The submitted <code>PDF</code> document must have passed the <a href="https://www.pdf-express.org/" target="_blank">PDF eXpress™ Plus <i class="fas fa-external-link-square-alt"></i></a>.</p>
+                  <a class="btn btn-outline-info" type="button" href="https://www.pdf-express.org/frhelpnologin.asp" target="_blank">Learn PDF eXpress™ Plus</a>&nbsp;<a class="btn btn-primary" type="button" href="https://www.pdf-express.org/" target="_blank">Analyze my manuscript</a>
+                  <br><br>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
                 </div>
                 
@@ -516,13 +617,16 @@
                 <hr style="width: 75%">
                 
                 <h5>2. Analyze your camera-ready document</h5>
-                <p>The submitted <code>PDF</code> document must have passed the <a href="https://www.pdf-express.org/" target="_blank">PDF eXpress™ Plus <i class="fas fa-external-link-square-alt"></i></a>. PDF eXpress™ Plus is used to ensure the document are match with IEEE Xplore® compliance. The service is free of charge for ICST 2020 authors using <code>Conference ID: 50505XP</code>. Read <a target="_blank" href="https://www.pdf-express.org/frhelpnologin.asp">how to use IEEE PDF eXpress™ <i class="fas fa-external-link-square-alt"></i></a>. For a new user, you need to create <a href="https://www.pdf-express.org/contributor.asp" target="_blank">a new PDF eXpress™ account <i class="fas fa-external-link-square-alt"></i></a>. We highly recommend that you keep a backup of your <code>DOC</code> camera-ready document on your computer or another file storage.</p>
+                <p>The submitted <code>PDF</code> document must have passed the <a href="https://www.pdf-express.org/" target="_blank">PDF eXpress™ Plus <i class="fas fa-external-link-square-alt"></i></a>. PDF eXpress™ Plus is used to ensure the document are match with IEEE Xplore® compliance. The service is free of charge for ICST 2020 authors using <code>Conference ID: 50505XP</code>. We highly recommend that you keep a backup of your <code>DOC</code> camera-ready document on your computer or another file storage.</p>
+                <p>Read <a target="_blank" href="https://www.pdf-express.org/frhelpnologin.asp">how to use IEEE PDF eXpress™ <i class="fas fa-external-link-square-alt"></i></a>. For a new user, you need to create <a href="https://www.pdf-express.org/contributor.asp" target="_blank">a new PDF eXpress™ account <i class="fas fa-external-link-square-alt"></i></a>.</p>
+                <a class="btn btn-outline-info" type="button" href="https://www.pdf-express.org/frhelpnologin.asp" target="_blank">Learn PDF eXpress™ Plus</a>&nbsp;<a class="btn btn-primary" type="button" href="https://www.pdf-express.org/" target="_blank">Analyze my manuscript</a>
+                <br><br>
                 
                 <!-- next step -->
                 <div class="card p-5">
                   <div class="row">
                     <div class="col-sm-6 col-md-8"><h4>The manuscript is ready to upload!</h4><p>Now, you can upload your camera-ready manuscript in the system.</p></div>
-                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 6: Submit camera-ready" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">Go to the next step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
+                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 6: Sign the copyright" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">Go to the next step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
                   </div>
                 </div>
                 
@@ -532,13 +636,20 @@
               <div id="collapse6" class="collapse" aria-labelledby="sign-dion" data-parent="#submitdion">
                 <div class="py-5" style="height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
-                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <code title="Instruction" class="indicator-instruction" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 3: Reviewing process" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 4: Pay the conference fees" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 5: Check your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <code class="indicator">Step 6</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
                   <span class="badge badge-ico-process p-3"><i class="fas fa-copyright fa-2x"></i></span>
@@ -549,27 +660,21 @@
                 
                 <hr>
                 
-                <div class="alert alert-info alert-dismissible fade show" role="alert">
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                  <ul class="fa-ul" style="margin-bottom: 0rem;">
-                    <li><i class="fa fa-exclamation-triangle fa-li" aria-hidden="true"></i>The camera-ready submission can be done after <a href="tutorial-edas-payment-confirmation.html" class="alert-link">your payment has been verified</a>.</li>
-                    <li>Read the <a href="fees.html" class="alert-link">conference fees</a> to know how much do you need to pay.</li>
-                  </ul>
-                </div>
-                <div class="col-lg-10 col-sm-6">
-                  <h5 style="font-weight: 700;">Sign the e-copyright form</h5>
-                  <p><a target="_blank" href="http://edas.info/N25894">Log in <i class="fa fa-external-link"></i></a> to the ICST UGM 2019 EDAS site.</p>
-                  <img src="../images/tutorials/edas-login.png" class="rounded mb-3 img-tutorial">
-                  <p>Click the <code>copyright icon</code> of your accepted paper on the EDAS dashboard page.</p>
-                  <img src="../images/tutorials/edas/edas-sign-electronic-copyright.png" class="rounded mb-3 img-tutorial">
-                  <p>Sign the e-copyright. Please note that author (except from Environmental and Earth Science symposium) must have signed the copyright form. Otherwise, EDAS will not allow you to upload the camera-ready document.</p>
-                </div>
+                <h5>1. Log in to the ICST UGM 2020 EDAS site</h5>
+                <p>Type <a target="_blank" href="https://edas.info"> edas.info <i class="fas fa-external-link-square-alt"></i></a> and log in to your EDAS account.</p>
+                <img src="../images/tutorials/edas-login.png" class="rounded mb-3 img-tutorial">
+                
+                <hr style="width: 75%;">
+                
+                <h5>2. Sign the electronic copyright form</h5>
+                <p>Click the <code>copyright icon</code> of your accepted paper on the EDAS dashboard page and sign the electronic copyright.</p>
+                <img src="../images/tutorials/edas/edas-sign-electronic-copyright.png" class="rounded mb-3 img-tutorial">
                 
                 <!-- next step -->
                 <div class="card p-5">
                   <div class="row">
-                    <div class="col-sm-6 col-md-8"><h4>The manuscript is ready to upload!</h4><p>Now, you can upload your camera-ready manuscript in the system.</p></div>
-                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 6: Submit camera-ready" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">Go to the next step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
+                    <div class="col-sm-6 col-md-8"><h4>Wohoo!</h4><p>You have almost reached the last step of paper submission.</p></div>
+                    <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 7: Submit camera-ready" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">Go to the last step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
                   </div>
                 </div>
                 
@@ -579,59 +684,42 @@
               <div id="collapse7" class="collapse" aria-labelledby="check-dion" data-parent="#submitdion">
                 <div class="py-5" style="height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
-                    <code title="Instruction" class="badge-info" style="cursor: pointer;" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <code title="Instruction" class="indicator-instruction" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 2: Submit your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 3: Reviewing process" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 4: Pay the conference fees" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 5: Check your manuscript" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 6: Sign the copyright" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
+                    <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <code class="indicator" style="border-radius: 1rem 0.5rem 0.5rem 1rem;">Last step</code>
                   </div>
-                  <span class="badge badge-ico-process p-3"><i class="fas fa-user-plus fa-2x"></i></span>
+                  <span class="badge badge-ico-process p-3"><i class="fas fa-print fa-2x"></i></span>
                   <h4 class="pt-2">Submit camera-ready</h4>
-                  <p>This tutorial will guide you through submitting your camera-ready manuscript. Please make sure that your manuscript has been analyzed by the PDF eXpress™ Plus and the conference fee has been confirmed.</p>
+                  <p>After passing the PDF eXpress™ Plus, you can upload your camera-ready manuscript to the EDAS.</p>
+                  <a class="btn btn-primary" href="https://edas.info" target="_blank">Upload my final manuscript</a>
+                  <br><br>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
                 </div>
                 
                 <hr>
                 
-                <div class="row">
-                  <div class="col-lg-2 col-sm-6"><code>Action 1</code></div>
-                  <div class="col-lg-10 col-sm-6">
-                    <h5 style="font-weight: 700;">Submit the camera-ready document</h5>
-                    <p>In the EDAS dashboard page, click your paper title and upload the <code>PDF and DOC/DOCX/ZIP</code> documents by clicking the cloud icon in <code>Final manuscript</code>.</p>
-                    <p><img src="../images/tutorials/edas/edas-upload-camera-ready.png" class="rounded mb-3 img-tutorial" style="width: 300px; margin: auto;">
-                    </p>
-                  </div>
-                </div>
+                <h5>1. Submit the camera-ready document</h5>
+                <p>In the EDAS dashboard page, click your paper title and upload the <code>PDF and DOC/DOCX/ZIP</code> documents by clicking the cloud icon in <code>Final manuscript</code>.</p>
+                <img src="../images/tutorials/edas/edas-upload-camera-ready.png" class="rounded mb-3 img-tutorial" style="width: 300px; margin: auto;">
                 
-                <hr style="width: 90%" class="my-3">
+                <hr style="width: 75%">
                 
-                <div class="row">
-                  <div class="col-lg-2 col-sm-6"><code>Action 2</code></div>
-                  <div class="col-lg-10 col-sm-6">
-                    <h5 style="font-weight: 700;">Select one presenter of your paper</h5>
-                    <p>By default, the author who was submitted a paper will be presenting at the conference. If the submitter of your paper is not indicate the presenter, please define it in EDAS paper page.</p>
-                    <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
-                  </div>
-                </div>
+                <h5>2. Select one presenter of your paper</h5>
+                <p>By default, the author who was submitted a paper will be presenting at the conference. If the submitter of your paper is not indicate the presenter, please define it in EDAS paper page.</p>
+                <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
                 
-              </div>
-              
-              <!-- Activate your new EDAS account -->
-              <div id="collapseActivate" class="collapse" aria-labelledby="active-dion" data-parent="#submitdion">
-                <div class="text-center">
-                  <i title="Step 1: Create an EDAS account" class="fas fa-check-circle text-success" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"></i>
-                  <code class="indicator">Step 2</code>
-                  <i title="Step 3: Reviewing process" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3"></i>
-                  <i title="Step 4: Pay the conference fees" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4"></i>
-                  <i title="Step 6: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6"></i>
-                </div>
-                <div class="container py-5 centered">
-                  <iframe class="d-none d-md-block" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="750" height="890" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                  <iframe class="d-block d-sm-none" src="https://docs.google.com/forms/d/e/1FAIpQLScSfPtPAHAaNaxY113JREbPh-3Rqk0TFhKdpu-KLP5LsDtRNw/viewform?embedded=true" width="330" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                </div>
               </div>
               
             </div>
@@ -639,89 +727,88 @@
           
           <!-- Presentation -->
           <div class="tab-pane fade" id="nav-present" role="tabpanel" aria-labelledby="nav-present-tab">
-            <div class="container py-5">
-              <h4 id="present-guide" class="pt-3">Delivering your research</h4>
-              <p>Each parallel symposia will have a moderator, with one or more committee members in attendance. Oral presentations for the ICST symposia have been allocated 15 minutes of effective presentation time. One article can only be presented by a presenter, the other authors can register as non-presenters who help in the discussion sessions. Based on allocated presentation time, the presentation file should ideally contain approximately 10–12 PowerPoint slides. You are responsible for the content of your presentation.</p>
-              <p>All presenters are required to submit their presentation file during registration on the first or 
-                second day of the conference, at the submissions desk in front of the ballroom. It is not possible to use your own computer for your presentation.
+            <div class="container py-5" style="min-height: 80vh;">
+              <h4 id="present-guide">Presenting your research</h4>
+              <p>Each parallel symposia will have a moderator, with one or more committee members in attendance. Oral presentations for the ICST symposia have been allocated 15 minutes of effective presentation time. One paper can only be presented by a presenter, the other authors can register as non-presenters who help in the discussion sessions. Based on allocated presentation time, the presentation file should ideally contain approximately 10–12 PowerPoint slides. You are responsible for the content of your presentation.</p>
+              <p>All presenters are required to send their presentation file at least one week before the conference.
                 
                 <ul style="padding-left: 15px;">
                   <li>Your presentation file should be in a format compatible with Microsoft PowerPoint 2007 (or earlier).</li>
-                  <li>Bring your presentation on a USB memory stick. Facilities will not be provided for other submission methods.</li>
-                  <li>We highly recommend that you keep a backup of your presentation file on a second USB stick.</li>
+                  <li>We highly recommend that you keep a backup of your presentation file on your cloud storage.</li>
                   <li>Please do not embed videos in your presentation.</li>
                 </ul>
                 
               </p>
             </div>
           </div>
-          <p class="px-5 text-right"><a href="#top" class="small">Back to top&nbsp;<i class="fa fa-arrow-circle-up"></i></a></p>
-        </blog>
-      </div>
-    </section>
-    
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container py-4">
-        
-        <!-- Footer nav -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand"><img src="../images/logos/logo.svg" width="100px" style="filter: grayscale();"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footer-nav" aria-controls="footer-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="footer-nav">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="../index.html">Important dates</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">Committee</a></li>
-              <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
-              <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
-              <li class="nav-item"><a class="nav-link" href="fees.html">Fees</a></li>
-              <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
-              <li class="nav-item"><a class="nav-link" href="support.html">Contact us</a></li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="https://twitter.com/icstugm" target="_blank"><i class="fab fa-twitter fa-lg"></i><span class="d-lg-none d-sm-block">  icstugm</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="https://instagram.com/icstugm" target="_blank"><i class="fab fa-instagram fa-lg"></i><span class="d-lg-none d-sm-block">  icstugm</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCQU0DiHt6DhN3h9ojnBId7Q" target="_blank"><i class="fab fa-youtube fa-lg"></i><span class="d-lg-none d-sm-block">  YouTube</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="https://flic.kr/icst" target="_blank"><i class="fab fa-flickr fa-lg"></i><span class="d-lg-none d-sm-block">  icst</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="mailto:icst@ugm.ac.id" target="_blank"><i class="fas fa-envelope fa-lg"></i><span class="d-lg-none d-sm-block">  icst@ugm.ac.id</span></a></li>
-            </ul>
-          </div>
-        </nav>
-        
-        <hr class="mx-auto my-3" style="border-color: #e3e3f3;">
-        
-        <!-- Sponsors -->
-        <div class="text-center">
-          <img src="../images/logos/ugm.svg" class="px-3 my-2" style="filter: grayscale();" height="45px">
-          <img src="../images/publication/ieee-logo.svg" class="px-3 my-2" style="filter: grayscale();" height="35px">
-          <img src="../images/publication/scientificnet-logo.svg" class="px-3 my-2" style="filter: grayscale();" height="35px">
-          <img src="../images/publication/e3s-logo.svg" class="px-3 my-2" style="filter: grayscale();" height="35px">
-          <img src="../images/publication/scopus.svg" class="px-3 my-2" style="filter: grayscale();" height="35px">
-          <!-- <img src="../images/publication/ajstd-logo.svg" class="px-3 my-2" style="filter: grayscale();" height="35px"> -->
         </div>
-        
-        <hr class="mx-auto my-3" style="border-color: #e3e3f3;">
-        
-        <!-- Credits -->
-        <p class="text-muted text-justify small">© 2020 <a target="_blank" href="https://publikasi.ugm.ac.id/en/">Badan Penerbit dan Publikasi UGM</a>. Website developed by <a target="_blank" href="https://www.linkedin.com/in/rafieiy/">Rafieiy</a> using <a target="_blank" href="https://getbootstrap.com/docs/4.5/">Bootstrap 4.5</a>, and licenced as <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, <a target="_blank" href="https://github.com/bppugm/icst-2020/blob/master/LICENSE.md">unless otherwise stated</a>.
-          UGM and ICST logos © Universitas Gadjah Mada. Icons by <a target="_blank" href="http://fontawesome.io">Font Awesome 5.13.0</a> (Fonticons Inc. <a target="_blank" href="https://fontawesome.com/license"><i class="fab fa-creative-commons-pd-alt"></i></a>).
-          The International Conference on Science and Technology 2020, organized by <a target="_blank" href="https://publikasi.ugm.ac.id/en/">BPP UGM</a>.
-        </p>
-        
+        <p class="px-5 text-right"><a href="#top" class="small">Back to top&nbsp;<i class="fa fa-arrow-circle-up"></i></a></p>
+      </blog>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container py-4">
+      
+      <!-- Footer nav -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand"><img src="../images/logos/logo.svg" width="100px" style="filter: grayscale();"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footer-nav" aria-controls="footer-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="footer-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Important dates</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Committee</a></li>
+            <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+            <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+            <li class="nav-item"><a class="nav-link" href="fees.html">Fees</a></li>
+            <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+            <li class="nav-item"><a class="nav-link" href="support.html">Contact us</a></li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="https://twitter.com/icstugm" target="_blank"><i class="fab fa-twitter fa-lg"></i><span class="d-lg-none d-sm-block">  icstugm</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://instagram.com/icstugm" target="_blank"><i class="fab fa-instagram fa-lg"></i><span class="d-lg-none d-sm-block">  icstugm</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCQU0DiHt6DhN3h9ojnBId7Q" target="_blank"><i class="fab fa-youtube fa-lg"></i><span class="d-lg-none d-sm-block">  YouTube</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://flic.kr/icst" target="_blank"><i class="fab fa-flickr fa-lg"></i><span class="d-lg-none d-sm-block">  icst</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="mailto:icst@ugm.ac.id" target="_blank"><i class="fas fa-envelope fa-lg"></i><span class="d-lg-none d-sm-block">  icst@ugm.ac.id</span></a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <hr class="mx-auto my-3" style="border-color: #e3e3f3;">
+      
+      <!-- Sponsors -->
+      <div class="text-center">
+        <img src="../images/logos/ugm.svg" class="px-3 my-2" style="filter: grayscale();" height="45px">
+        <img src="../images/publication/ieee-logo.svg" class="px-3 my-2" style="filter: grayscale();" height="35px">
+        <img src="../images/publication/scientificnet-logo.svg" class="px-3 my-2" style="filter: grayscale();" height="35px">
+        <img src="../images/publication/e3s-logo.svg" class="px-3 my-2" style="filter: grayscale();" height="35px">
+        <img src="../images/publication/scopus.svg" class="px-3 my-2" style="filter: grayscale();" height="35px">
+        <!-- <img src="../images/publication/ajstd-logo.svg" class="px-3 my-2" style="filter: grayscale();" height="35px"> -->
       </div>
-    </footer>
-    <script>
-      $('#submitbtn').on('click', function (e) {
-        e.preventDefault()
-        $('#nav-info').removeClass('active')
-        $('#nav-info').removeClass('show')
-        $('#nav-info-tab').removeClass('active')
-        
-        $('#nav-submit-tab').addClass('active')
-        $('#nav-submit').tab('show')
-      })
-    </script>
-  </body>
-  </html>
+      
+      <hr class="mx-auto my-3" style="border-color: #e3e3f3;">
+      
+      <!-- Credits -->
+      <p class="text-muted text-justify small">© 2020 <a target="_blank" href="https://publikasi.ugm.ac.id/en/">Badan Penerbit dan Publikasi UGM</a>. Website developed by <a target="_blank" href="https://www.linkedin.com/in/rafieiy/">Rafieiy</a> using <a target="_blank" href="https://getbootstrap.com/docs/4.5/">Bootstrap 4.5</a>, and licenced as <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, <a target="_blank" href="https://github.com/bppugm/icst-2020/blob/master/LICENSE.md">unless otherwise stated</a>.
+        UGM and ICST logos © Universitas Gadjah Mada. Icons by <a target="_blank" href="http://fontawesome.io">Font Awesome 5.13.0</a> (Fonticons Inc. <a target="_blank" href="https://fontawesome.com/license"><i class="fab fa-creative-commons-pd-alt"></i></a>).
+        The International Conference on Science and Technology 2020, organized by <a target="_blank" href="https://publikasi.ugm.ac.id/en/">BPP UGM</a>.
+      </p>
+      
+    </div>
+  </footer>
+  <!-- <script>
+    $('#submitbtn').on('click', function (e) {
+      e.preventDefault()
+      $('#nav-info').removeClass('active')
+      $('#nav-info').removeClass('show')
+      $('#nav-info-tab').removeClass('active')
+      
+      $('#nav-submit-tab').addClass('active')
+      $('#nav-submit').tab('show')
+    })
+  </script> -->
+</body>
+</html>
