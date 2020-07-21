@@ -87,7 +87,7 @@
       
       <nav class="navbar flex-column bg-pattern-icst fixed-bottom d-md-none">
         <div class="nav">
-          <button class="btn btn-toolbar" style="padding: 0.5rem 40vw 0.5rem 40vw;" data-toggle="collapse" data-target="#symposium-nav" aria-controls="symposium-nav" aria-expanded="false"><i class="fas fa-chevron-up"></i></button>
+          <button class="btn btn-group-toggle text-uppercase" style="padding: 0.5rem 40vw 0.5rem 40vw;" data-toggle="collapse" data-target="#symposium-nav" aria-controls="symposium-nav" aria-expanded="false"><i class="fas fa-chevron-up"></i>Menu</button>
         </div>
         <div class="nav nav-pills collapse" id="symposium-nav">
           <a class="nav-item nav-link text-center" href="symposia.html"><i class="fas fa-arrow-left"></i><br>Symposia</a>
@@ -245,7 +245,7 @@
                       <br>
                       <h4>Hi, applicants!</h4>
                       <p>To participate as a presenter in the ICST 2020, there are seven steps that you need to follow.</p>
-                      <button class="btn btn-primary" type="button" data-toggle="collapse1" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Start now</button>
+                      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Start now</button>
                     </div>
                   </div>
                 </div>
@@ -274,7 +274,10 @@
                   <span class="badge badge-ico-process p-3"><i class="fas fa-user-plus fa-2x"></i></span>
                   <h4 class="pt-2">Create an EDAS account</h4>
                   <p>Before submitting your manuscript, the authors need to have an EDAS account. If you already have an EDAS account, you can <span class="text-primary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"> go to the next step <i class="fas fa-forward"></i></span> to submit your manuscript using your registered account.</p>
-                  <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">I have an EDAS account</button><br class="d-sm-block d-lg-none">&nbsp;<a class="btn btn-primary" href="https://edas.info/?c=26926" target="_blank">Create new account</a>
+                  <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">I have an EDAS account</button><br class="d-sm-block d-lg-none">
+                  &nbsp;
+                  <br class="d-lg-none">
+                  <a class="btn btn-primary" href="https://edas.info/?c=26926" target="_blank">Create new account</a>
                   <br><br>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
                 </div>
@@ -339,7 +342,7 @@
               
               <!-- 2 Submit your manuscript -->
               <div id="collapse2" class="collapse" aria-labelledby="submit-dion" data-parent="#submitdion">
-                <div class="py-5" style="height: 100vh;">
+                <div class="py-5" style="min-height: 100vh;">
                   <div class="ml-auto mr-0 py-5">
                     <code title="Instruction" class="indicator-instruction" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0">Instruction</code>
                     <i class="fas fa-long-arrow-alt-right text-info"></i>
@@ -363,7 +366,10 @@
                     <li class="far fa-check-square text-primary"></li> The registered EDAS account of all authors in your manuscript.<br>
                     <li class="far fa-check-square text-primary"></li> Manuscript format and content in accordance with the <a data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide">author guidelines</a>.
                   </p>
-                  <a class="btn btn-outline-info" type="button" data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide">Re-read the author guidelines</a>&nbsp;<a class="btn btn-primary" href="https://edas.info/newPaper.php?c=26926&track=99843" target="_blank">Submit my manuscript</a>
+                  <a class="btn btn-outline-info" type="button" data-toggle="tab" href="#nav-guide" role="tab" aria-controls="nav-guide">Re-read the author guidelines</a>
+                  &nbsp;
+                  <br class="d-lg-none"><br class="d-lg-none">
+                  <a class="btn btn-primary" href="https://edas.info/newPaper.php?c=26926&track=99843" target="_blank">Submit my manuscript</a>
                   <br><br>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
                 </div>
@@ -439,7 +445,9 @@
                     <i class="fas fa-long-arrow-alt-right text-info"></i>
                     <i title="Step 7: Submit camera-ready" class="far fa-circle text-secondary" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7"></i>
                   </div>
-                  <div class="row">
+
+                  <!-- review process -->
+                  <!-- <div class="row">
                     <div class="col-lg-6 text-center">
                       <img src="../images/stock/review.svg" class="d-sm-block d-lg-none img-fluid">
                       <img src="../images/stock/review.svg" class="d-none d-md-block" style="max-width: 25vw;">
@@ -448,12 +456,12 @@
                       <br>
                       <h4>Reviewing your manuscript</h4>
                       <p>Your manuscript will go to the blind review. You can check the status of your manuscript anytime from your account in the EDAS. We will notify you too via email when the review process was finished.</p>
-                      <button class="btn btn-primary" type="button" href="http://edas.info" target="_blank">Check my manuscript</button>
+                      <a class="btn btn-primary" href="https://edas.info" target="_blank">Check my manuscript</a>
                     </div>
-                  </div>
+                  </div> -->
                   
                   <!-- accepted -->
-                  <!-- <div class="row">
+                  <div class="row">
                     <div class="col-lg-6">
                       <img src="../images/stock/accepted.svg" class="img-fluid">
                     </div>
@@ -461,9 +469,12 @@
                       <br>
                       <h4>Congratulation!</h4>
                       <p>You can go the the next step if your manuscript has been accepted to presents in the conference.</p>
-                      <a class="btn btn-outline-info" type="button" href="http://edas.info" target="_blank">Check my manuscript</a>&nbsp;<button class="btn btn-primary" title="Step 4: Pay the conference fees" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">Go to the next step</button>
+                      <a class="btn btn-outline-info" type="button" href="http://edas.info" target="_blank">Check my manuscript</a>
+                      &nbsp;
+                      <br class="d-lg-none">
+                      <button class="btn btn-primary" title="Step 4: Pay the conference fees" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">Go to the next step</button>
                     </div>
-                  </div> -->
+                  </div>
                   
                 </div>
               </div>
@@ -491,7 +502,10 @@
                   <span class="badge badge-ico-process p-3"><i class="fas fa-credit-card fa-2x"></i></span>
                   <h4 class="pt-2">Pay the conference fees</h4>
                   <p>If your manuscript has been accepted to be presented at the conference, you need to pay the conference fees before uploading the camera-ready manuscript. FYI, one manuscript can only be delivered by one presenter. However, one presenter can deliver more than one manuscript.</p>
-                  <a class="btn btn-outline-info" type="button" href="fees.html">Find out my bill</a>&nbsp;<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#paymentconfirmationModal">Confirm my payment</button>
+                  <a class="btn btn-outline-info" type="button" href="fees.html">Find out my bill</a>
+                  &nbsp;
+                  <br class="d-lg-none">
+                  <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#paymentconfirmationModal">Confirm my payment</button>
                   <br><br>
                   <code class="text-muted font-italic"><i class="fas fa-angle-up"></i> Swipe up to read the tutorial <i class="fas fa-angle-up"></i></code>
                 </div>
@@ -673,7 +687,7 @@
                 <!-- next step -->
                 <div class="card p-5">
                   <div class="row">
-                    <div class="col-sm-6 col-md-8"><h4>Wohoo!</h4><p>You have almost reached the last step of paper submission.</p></div>
+                    <div class="col-sm-6 col-md-8"><h4>Yippee!</h4><p>You have almost reached the last step of paper submission.</p></div>
                     <div class="col-sm-6 col-md-4"><button class="btn btn-outline-primary p-3 align-items-end" title="Step 7: Submit camera-ready" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7">Go to the last step&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></button></div>
                   </div>
                 </div>
