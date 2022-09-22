@@ -1,6 +1,6 @@
 <a href="http://icst.ugm.ac.id/2020/"><img src="https://github.com/bppugm/icst-2020/blob/master/images/logos/logo.svg" height="142px" align="right"></a>
 
-# Website for the ICST 2020
+# Website for the ICST UGM 2020
 
 This is the website for The 6<sup>th</sup> International Conference on Science and Technology (ICST 2020), hosted by Universitas Gadjah Mada.
 
